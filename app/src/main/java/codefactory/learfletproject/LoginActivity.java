@@ -1,0 +1,33 @@
+package codefactory.learfletproject;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageButton;
+
+public class LoginActivity extends AppCompatActivity {
+    EditText edt_id = null;
+    EditText edt_pw = null;
+    ImageButton imgbtn_join = null;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
+        edt_id = (EditText)findViewById(R.id.edt_id);
+        edt_pw = (EditText)findViewById(R.id.edt_pw);
+        imgbtn_join = (ImageButton)findViewById(R.id.imgbtn_join);
+
+        imgbtn_join.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(it);
+                finish();
+            }
+        });
+    }
+}

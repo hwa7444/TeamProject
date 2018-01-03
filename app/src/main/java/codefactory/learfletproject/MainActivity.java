@@ -1,21 +1,30 @@
 package codefactory.learfletproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
+
+    ImageButton imgbtn_back = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //하하
-        //윤지호
-        //하하호호
-        //윤지호지호지호지호
-        //죠스타입니다
-        //테스트윤지호
-        //테스트2지호지호
-        //ㅇㄴ
+
+        imgbtn_back = (ImageButton)findViewById(R.id.imgbtn_back);
+
+        imgbtn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(it);
+                finish();
+            }
+        });
+
     }
 }
