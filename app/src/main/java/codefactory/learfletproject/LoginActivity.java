@@ -11,6 +11,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText edt_id = null;
     EditText edt_pw = null;
     ImageButton imgbtn_join = null;
+    ImageButton imgbtn_login = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
         edt_id = (EditText)findViewById(R.id.edt_id);
         edt_pw = (EditText)findViewById(R.id.edt_pw);
         imgbtn_join = (ImageButton)findViewById(R.id.imgbtn_join);
+        imgbtn_login = (ImageButton)findViewById(R.id.imgbtn_login);
 
         imgbtn_join.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,5 +31,16 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        imgbtn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(LoginActivity.this, mainscreen.class);
+                startActivity(it);
+                finish();
+            }
+        });
+
+
     }
 }
