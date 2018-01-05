@@ -25,14 +25,7 @@ import java.util.ArrayList;
  * Created by jhyoo on 2018-01-04.
  */
 public class Fragment4 extends Fragment {
-    ArrayList<String> array = new ArrayList<String>();
-    ArrayList<dataVO> arrayList = new ArrayList<dataVO>();
-    ImageView img = null;
-    Button btn_use = null;
-    TextView tv_name = null;
-    TextView tv_time = null;
-    Button btn_send = null;
-    ListView lv = null;
+
 
     private ArrayList<String> mGroupList = null;
     private ArrayList<ArrayList<String>> mChildList = null;

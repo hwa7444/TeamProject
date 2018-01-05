@@ -98,25 +98,27 @@
         android:layout_height="30dp"
         android:layout_below="@+id/edt_age"
         android:layout_marginTop="19dp"
-        />
+        android:textAlignment="center" />
 
     <Spinner
         android:id="@+id/spn_menu2"
         android:layout_width="140dp"
         android:layout_height="30dp"
+        android:layout_alignLeft="@+id/spn_menu"
         android:layout_alignStart="@+id/spn_menu"
         android:layout_below="@+id/spn_menu"
         android:layout_marginTop="12dp"
-        android:layout_alignLeft="@+id/spn_menu" />
+        android:textAlignment="center" />
 
     <Spinner
         android:id="@+id/spn_menu3"
         android:layout_width="140dp"
         android:layout_height="30dp"
+        android:layout_alignLeft="@+id/spn_menu2"
         android:layout_alignStart="@+id/spn_menu2"
         android:layout_below="@+id/spn_menu2"
         android:layout_marginTop="12dp"
-        android:layout_alignLeft="@+id/spn_menu2" />
+        android:textAlignment="center" />
 
     <ImageButton
         android:id="@+id/imgbtn_joinbtn"

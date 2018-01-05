@@ -3,4 +3,24 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="number">
+        <item>림송하</item>
+        <item>박경도</item>
+        <item>김병우</item>
+        <item>륜지호</item>
+    </string-array>
+
+    <string-array name="number2">
+        <item>림송하</item>
+        <item>박경도</item>
+        <item>김병우</item>
+        <item>륜지호</item>
+    </string-array>
+
+    <string-array name="number3">
+        <item>림송하</item>
+        <item>박경도</item>
+        <item>김병우</item>
+        <item>륜지호</item>
+    </string-array>
 </resources>

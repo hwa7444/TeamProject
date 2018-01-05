@@ -16,12 +16,11 @@ import java.util.ArrayList;
  */
 
 public class mExpandableAdapter extends BaseExpandableListAdapter {
-    private ArrayList<String> groupList = null;
-    private ArrayList<ArrayList<String>> childList = null;
-    private LayoutInflater inflater = null;
+        private ArrayList<String> groupList = null;
+        private ArrayList<ArrayList<String>> childList = null;
+        private LayoutInflater inflater = null;
 
-    public mExpandableAdapter(Context c, ArrayList<String> groupList,
-                              ArrayList<ArrayList<String>> childList){
+    public mExpandableAdapter(Context c, ArrayList<String> groupList,ArrayList<ArrayList<String>> childList){
         this.inflater = LayoutInflater.from(c);
         this.groupList = groupList;
         this.childList = childList;
