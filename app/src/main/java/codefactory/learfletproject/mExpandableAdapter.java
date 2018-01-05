@@ -27,8 +27,7 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public int getGroupCount() {
-        return groupList.size();
+    public int getGroupCount() { return groupList.size();
     }
 
     @Override
@@ -90,6 +89,9 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
         /*tv1.setText(childList.get(groupID).get(childID));*/
 
         if (groupID == 2){
+            tv3.setVisibility(View.GONE);
+            btn4.setVisibility(View.GONE);
+        }else if(groupID == 1){
             tv3.setVisibility(View.GONE);
             btn4.setVisibility(View.GONE);
         }

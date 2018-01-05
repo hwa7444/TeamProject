@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="codefactory.learfletproject.mainscreen">
+    tools:context="com.example.jhyoo.myapplication.MainActivity">
 
     <ImageView
         android:id="@+id/image_line"
@@ -12,8 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/txtv_join"
-        app:srcCompat="@drawable/line1"
-        android:layout_alignParentLeft="true" />
+        app:srcCompat="@drawable/line1" />
 
     <ImageView
         android:id="@+id/image_line2"
@@ -22,8 +21,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="64dp"
-        app:srcCompat="@drawable/line1"
-        android:layout_alignParentLeft="true" />
+        app:srcCompat="@drawable/line1" />
 
     <TextView
         android:id="@+id/txtv_join"
@@ -42,73 +40,68 @@
         android:layout_height="40dp"
         android:layout_above="@+id/image_line"
         android:layout_alignParentStart="true"
-        app:srcCompat="@drawable/logo"
-        android:layout_alignParentLeft="true" />
-
-    <ImageButton
-        android:id="@+id/imgbtn_num1"
-        android:layout_width="60dp"
-        android:layout_height="66dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:backgroundTint="@android:color/background_light"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/icon1"
-        android:layout_alignParentLeft="true" />
-
-    <ImageButton
-        android:id="@+id/imgbtn_num4"
-        android:layout_width="60dp"
-        android:layout_height="66dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/txtv_join"
-        android:backgroundTint="@android:color/background_light"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/icon4"
-        android:layout_toRightOf="@+id/txtv_join" />
-
-    <ImageButton
-        android:id="@+id/imgbtn_num5"
-        android:layout_width="60dp"
-        android:layout_height="66dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:backgroundTint="@android:color/background_light"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/icon5"
-        android:layout_alignParentRight="true" />
-
-    <ImageButton
-        android:id="@+id/imgbtn_num3"
-        android:layout_width="60dp"
-        android:layout_height="66dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="@android:color/background_light"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/icon3" />
-
-    <ImageButton
-        android:id="@+id/imgbtn_num2"
-        android:layout_width="60dp"
-        android:layout_height="66dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="18dp"
-        android:layout_toStartOf="@+id/imgbtn_num3"
-        android:backgroundTint="@android:color/background_light"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/icon2"
-        android:layout_marginRight="18dp"
-        android:layout_toLeftOf="@+id/imgbtn_num3" />
+        app:srcCompat="@drawable/logo" />
 
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="453dp"
-        android:layout_above="@+id/imgbtn_num1"
+        android:layout_height="450dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/image_line">
 
     </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="500dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgbtn_num1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/background_light"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/icon1" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_num2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/background_light"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/icon2" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_num3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/background_light"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/icon3" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_num4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/background_light"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/icon4" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_num5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/background_light"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/icon5" />
+    </LinearLayout>
 
 </RelativeLayout>
