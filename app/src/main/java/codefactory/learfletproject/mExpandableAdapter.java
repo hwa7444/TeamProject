@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -76,21 +78,21 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
         if(view == null){
             view = inflater.inflate(R.layout.sublistitem, viewGroup, false);
         }
-        TextView tv1 = view.findViewById(R.id.tv_child1);
+        ImageView img1 = view.findViewById(R.id.img_child1);
         TextView tv2 = view.findViewById(R.id.tv_child2);
         TextView tv3 = view.findViewById(R.id.tv_child3);
-        TextView tv4 = view.findViewById(R.id.tv_child4);
+        Button btn4 = view.findViewById(R.id.btn_child4);
 
-        tv1.setVisibility(View.VISIBLE);
+        img1.setVisibility(View.VISIBLE);
         tv2.setVisibility(View.VISIBLE);
         tv3.setVisibility(View.VISIBLE);
-        tv4.setVisibility(View.VISIBLE);
+        btn4.setVisibility(View.VISIBLE);
 
-        tv1.setText(childList.get(groupID).get(childID));
+        /*tv1.setText(childList.get(groupID).get(childID));*/
 
-        if (groupID == 1){
+        if (groupID == 2){
             tv3.setVisibility(View.GONE);
-            tv4.setVisibility(View.GONE);
+            btn4.setVisibility(View.GONE);
         }
 
         return view;
