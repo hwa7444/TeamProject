@@ -94,14 +94,15 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
 
         /*tv1.setText(childList.get(groupID).get(childID));*/
 
-        if (groupID == 2){
+        if (groupID == 0){
             tv3.setVisibility(View.GONE);
             btn4.setVisibility(View.GONE);
         }else if(groupID == 1){
             tv3.setVisibility(View.GONE);
             btn4.setVisibility(View.GONE);
-        }
-
+        }/*else{
+            view = inflater.inflate(R.layout.fragment1, viewGroup, false);
+        }*/
 
 
         return view;

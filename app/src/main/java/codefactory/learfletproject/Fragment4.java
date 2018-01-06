@@ -1,5 +1,6 @@
 package codefactory.learfletproject;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
@@ -26,7 +28,7 @@ import java.util.ArrayList;
  */
 public class Fragment4 extends Fragment {
 
-
+    Button btn_list = null;
     private ArrayList<String> mGroupList = null;
     private ArrayList<ArrayList<String>> mChildList = null;
     private ArrayList<String> mChildListContent = null;
@@ -39,6 +41,7 @@ public class Fragment4 extends Fragment {
 
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment4, container, false);
+        btn_list = (Button)rootView.findViewById(R.id.btn_list);
 
         ExpandableListView listView = rootView.findViewById(R.id.exlistView);
         mGroupList = new ArrayList<String>();
@@ -60,6 +63,15 @@ public class Fragment4 extends Fragment {
 
         mExpandableAdapter eea = new mExpandableAdapter(getActivity(), mGroupList, mChildList);
         listView.setAdapter(eea);
+
+        btn_list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(getActivity(), chart.class);
+                startActivity(it);
+
+            }
+        });
 
 
         return rootView;

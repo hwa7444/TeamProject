@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".mainscreen" />
-        <activity android:name=".userinfo"></activity>
+        <activity android:name=".userinfo" />
+        <activity android:name=".chart"></activity>
     </application>
 
 </manifest>

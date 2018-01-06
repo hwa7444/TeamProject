@@ -1,12 +1,8 @@
 package codefactory.learfletproject;
 
 import android.graphics.Color;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.github.mikephil.charting.animation.Easing;
@@ -19,24 +15,20 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
-/**
- * Created by jhyoo on 2018-01-04.
- */
-
-public class Fragment1 extends Fragment {
+public class chart extends AppCompatActivity {
 
     private PieChart mPieChart; //piechart
     private Button btn_pie1, btn_bar1, btn_line1;
-    @Nullable
+
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_chart);
 
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment1, container, false);
-
-        mPieChart = (PieChart) rootView.findViewById(R.id.piechart);
-        btn_pie1 = (Button) rootView.findViewById(R.id.btn_pie1);
-        btn_bar1 = (Button) rootView.findViewById(R.id.btn_bar1);
-        btn_line1 = (Button) rootView.findViewById(R.id.btn_line1);
+        mPieChart = (PieChart) findViewById(R.id.piechart);
+        btn_pie1 = (Button) findViewById(R.id.btn_pie1);
+        btn_bar1 = (Button) findViewById(R.id.btn_bar1);
+        btn_line1 = (Button) findViewById(R.id.btn_line1);
 //
 //            btn_bar1.setOnClickListener(new View.OnClickListener() {
 //                @Override
@@ -94,10 +86,5 @@ public class Fragment1 extends Fragment {
         pie_data.setValueTextColor(Color.YELLOW); //퍼센트 색깔
 
         mPieChart.setData(pie_data);
-
-
-        return rootView;
-
     }
 }
-
