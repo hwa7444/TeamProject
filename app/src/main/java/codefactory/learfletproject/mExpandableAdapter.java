@@ -1,6 +1,7 @@
 package codefactory.learfletproject;
 
 import android.content.Context;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,11 +21,15 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
         private ArrayList<ArrayList<String>> childList = null;
         private LayoutInflater inflater = null;
 
+
     public mExpandableAdapter(Context c, ArrayList<String> groupList,ArrayList<ArrayList<String>> childList){
         this.inflater = LayoutInflater.from(c);
         this.groupList = groupList;
         this.childList = childList;
+
+
     }
+
 
     @Override
     public int getGroupCount() { return groupList.size();
@@ -71,7 +76,8 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public View getChildView(int groupID, int childID, boolean b, View view, ViewGroup viewGroup) {
+    public View getChildView(final int groupID, int childID, boolean b, View view, ViewGroup viewGroup) {
+
         //여기만 손대면돼욤!
         if(view == null){
             view = inflater.inflate(R.layout.sublistitem, viewGroup, false);
@@ -95,6 +101,8 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
             tv3.setVisibility(View.GONE);
             btn4.setVisibility(View.GONE);
         }
+
+
 
         return view;
     }
