@@ -6,32 +6,53 @@
     android:layout_height="match_parent"
     tools:context="codefactory.learfletproject.userinfo">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <GridLayout
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/gridLayout">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/human" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1"
-                android:cropToPadding="false"
-                app:srcCompat="@drawable/human" />
+    </GridLayout>
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="죠스타" />
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="130dp"
+        android:orientation="vertical">
 
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="\n죠스타"
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="jhyoon1128@gmail.com"
+            android:textAlignment="center"
+            android:textSize="16sp" />
     </LinearLayout>
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gridLayout" />
+
 </RelativeLayout>
