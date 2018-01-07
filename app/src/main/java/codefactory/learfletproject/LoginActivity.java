@@ -1,6 +1,7 @@
 package codefactory.learfletproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText edt_pw = null;
     ImageButton imgbtn_join = null;
     ImageButton imgbtn_login = null;
-
+    SharedPreferences spf = null;
 
 
     @Override
@@ -39,8 +40,19 @@ public class LoginActivity extends AppCompatActivity {
         imgbtn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //id - firebase에서 받아와야 함.
+                String id = "beng";
+                spf.edit().putString("id", id + "").commit();
+
+
                 Intent it = new Intent(LoginActivity.this, mainscreen.class);
+
+
                 startActivity(it);
+
+
+
+
                 finish();
             }
         });

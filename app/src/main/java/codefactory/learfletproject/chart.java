@@ -25,6 +25,8 @@ public class chart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chart);
 
+
+
         mPieChart = (PieChart) findViewById(R.id.piechart);
         btn_pie1 = (Button) findViewById(R.id.btn_pie1);
         btn_bar1 = (Button) findViewById(R.id.btn_bar1);

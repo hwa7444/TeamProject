@@ -1,7 +1,10 @@
 package codefactory.learfletproject;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -17,10 +20,20 @@ public class mainscreen extends AppCompatActivity {
     ImageButton imgbtn_num3 = null;
     ImageButton imgbtn_num4 = null;
     ImageButton imgbtn_num5 = null;
+
+    SharedPreferences spf = null;
+
+    String id = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainscreen);
+
+        //아이디 받아온것
+        spf = getSharedPreferences("id", MODE_PRIVATE);
+        id = spf.getString("id","");
+
+        Log.v("확인", id);
 
         fragment1 = new Fragment1();
         fragment2 = new Fragment2();
