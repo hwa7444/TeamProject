@@ -29,7 +29,7 @@ public class mainscreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainscreen);
 
-        //아이디 받아온것
+        //아이디 받아오기
         spf = getSharedPreferences("id", MODE_PRIVATE);
         id = spf.getString("id","");
 

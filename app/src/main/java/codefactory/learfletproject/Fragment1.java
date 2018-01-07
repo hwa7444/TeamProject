@@ -1,5 +1,7 @@
 package codefactory.learfletproject;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -27,16 +29,27 @@ public class Fragment1 extends Fragment {
 
     private PieChart mPieChart; //piechart
     private Button btn_pie1, btn_bar1, btn_line1;
+    SharedPreferences spf = null;
+    String id = "";
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment1, container, false);
 
+        spf = this.getActivity().getSharedPreferences("id", Context.MODE_PRIVATE);
+        id = spf.getString("id","");
+
+
         mPieChart = (PieChart) rootView.findViewById(R.id.piechart);
         btn_pie1 = (Button) rootView.findViewById(R.id.btn_pie1);
         btn_bar1 = (Button) rootView.findViewById(R.id.btn_bar1);
         btn_line1 = (Button) rootView.findViewById(R.id.btn_line1);
+
+
+
+
 //
 //            btn_bar1.setOnClickListener(new View.OnClickListener() {
 //                @Override

@@ -1,5 +1,6 @@
 package codefactory.learfletproject;
 
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,12 +21,18 @@ public class chart extends AppCompatActivity {
     private PieChart mPieChart; //piechart
     private Button btn_pie1, btn_bar1, btn_line1;
 
+    SharedPreferences spf = null;
+    String id = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chart);
 
+        //아이디 받아오기
 
+        spf = getSharedPreferences("id", MODE_PRIVATE);
+        id = spf.getString("id","");
 
         mPieChart = (PieChart) findViewById(R.id.piechart);
         btn_pie1 = (Button) findViewById(R.id.btn_pie1);

@@ -42,6 +42,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //id - firebase에서 받아와야 함.
                 String id = "beng";
+                spf = getSharedPreferences("id", MODE_PRIVATE);
                 spf.edit().putString("id", id + "").commit();
 
 

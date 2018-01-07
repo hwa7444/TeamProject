@@ -1,5 +1,7 @@
 package codefactory.learfletproject;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -20,10 +22,16 @@ public class Fragment5 extends Fragment {
     private ArrayList<ArrayList<String>> mChildList2 = null;
     private ArrayList<String> mChildListContent2 = null;
 
+    SharedPreferences spf = null;
+    String id = "";
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        spf = this.getActivity().getSharedPreferences("id", Context.MODE_PRIVATE);
+        id = spf.getString("id","");
+        
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment5, container, false);
 
         ExpandableListView listView = rootView.findViewById(R.id.exlistview2);
