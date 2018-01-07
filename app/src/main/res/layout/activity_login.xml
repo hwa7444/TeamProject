@@ -27,8 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="1"
-                android:backgroundTint="@android:color/background_light"
-                app:srcCompat="@drawable/back" />
+                android:background="@drawable/back" />
         </LinearLayout>
 
         <LinearLayout
@@ -46,7 +45,7 @@
                 android:layout_weight="1"
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingRight="50dp"
-                android:text="로그인"
+                android:text="Sign In"
                 android:textAlignment="center"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -62,16 +61,18 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:layout_weight="1"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="match_parent"
+                android:layout_width="70dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="0dp"
-                android:layout_marginTop="40dp" />
+                android:layout_marginTop="40dp"
+                android:background="@drawable/human2"
+                android:scaleType="fitXY" />
         </LinearLayout>
 
         <LinearLayout
@@ -88,8 +89,9 @@
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="40dp"
                 android:ems="10"
-                android:hint="이메일 또는 아이디"
-                android:inputType="textPersonName" />
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -105,7 +107,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:ems="10"
-                android:hint="비밀번호"
+                android:hint="********"
                 android:inputType="textPassword" />
         </LinearLayout>
 
@@ -117,19 +119,19 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/imgbtn_join"
+                <Button
+                    android:id="@+id/imgbutton_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
                     android:layout_weight="1"
                     android:backgroundTint="@android:color/background_light"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/joinbutton2" />
+                    android:text="회원이 아니신가요?" />
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -140,14 +142,13 @@
 
                 <ImageButton
                     android:id="@+id/imgbtn_login"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="50dp"
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@android:color/background_light"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/loginbutton" />
+                    android:background="@drawable/loginbutton"
+                    android:scaleType="matrix" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

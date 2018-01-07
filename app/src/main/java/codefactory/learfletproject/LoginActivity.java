@@ -40,9 +40,9 @@ public class LoginActivity extends AppCompatActivity {
         imgbtn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //id - firebase에서 받아와야 함.
+                /*//id - firebase에서 받아와야 함.
                 String id = "beng";
-                spf.edit().putString("id", id + "").commit();
+                spf.edit().putString("id", id + "").commit();*/
 
 
                 Intent it = new Intent(LoginActivity.this, mainscreen.class);
@@ -56,7 +56,6 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
-
 
     }
 }
