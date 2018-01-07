@@ -1,6 +1,7 @@
 package codefactory.learfletproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,17 +13,23 @@ import android.widget.Spinner;
 public class MainActivity extends AppCompatActivity {
 
     ImageButton imgbtn_back = null;
-
+    SharedPreferences spf = null;
+    String id = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        spf = getSharedPreferences("id", MODE_PRIVATE);
+        id = spf.getString("id","");
+
+
         imgbtn_back = (ImageButton)findViewById(R.id.imgbtn_back);
-        Spinner spinner = (Spinner)findViewById(R.id.spn_menu);
-        Spinner spinner1 = (Spinner)findViewById(R.id.spn_menu2);
-        Spinner spinner2 = (Spinner)findViewById(R.id.spn_menu3);
+        Spinner spinner = (Spinner)findViewById(R.id.spn_interest1);
+        Spinner spinner1 = (Spinner)findViewById(R.id.spn_interest2);
+        Spinner spinner2 = (Spinner)findViewById(R.id.spn_interest3);
 
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.number,android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);

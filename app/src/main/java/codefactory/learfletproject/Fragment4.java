@@ -1,6 +1,8 @@
 package codefactory.learfletproject;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -32,15 +34,20 @@ public class Fragment4 extends Fragment {
     private ArrayList<String> mGroupList = null;
     private ArrayList<ArrayList<String>> mChildList = null;
     private ArrayList<String> mChildListContent = null;
-
+    SharedPreferences spf = null;
+    String id = "";
 
     @Nullable
     @Override
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
+        spf = this.getActivity().getSharedPreferences("id", Context.MODE_PRIVATE);
+        id = spf.getString("id","");
+
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment4, container, false);
+
         btn_list = (Button)rootView.findViewById(R.id.btn_list);
 
         ExpandableListView listView = rootView.findViewById(R.id.exlistView);
