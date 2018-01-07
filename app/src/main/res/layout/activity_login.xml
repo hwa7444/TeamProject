@@ -71,8 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="0dp"
-                android:layout_marginTop="40dp"
-                app:srcCompat="@drawable/admin2" />
+                android:layout_marginTop="40dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -129,6 +128,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_weight="1"
                     android:backgroundTint="@android:color/background_light"
+                    android:scaleType="fitCenter"
                     app:srcCompat="@drawable/joinbutton2" />
             </LinearLayout>
 
@@ -146,7 +146,7 @@
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
                     android:backgroundTint="@android:color/background_light"
-                    android:scaleType="fitXY"
+                    android:scaleType="fitCenter"
                     app:srcCompat="@drawable/loginbutton" />
             </LinearLayout>
         </LinearLayout>

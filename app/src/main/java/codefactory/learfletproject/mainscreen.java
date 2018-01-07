@@ -3,9 +3,14 @@ package codefactory.learfletproject;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 public class mainscreen extends AppCompatActivity {
+
     Fragment1 fragment1;
     Fragment2 fragment2;
     Fragment3 fragment3;
@@ -17,11 +22,16 @@ public class mainscreen extends AppCompatActivity {
     ImageButton imgbtn_num3 = null;
     ImageButton imgbtn_num4 = null;
     ImageButton imgbtn_num5 = null;
+    boolean isPageOpen = false;
+    FrameLayout container = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainscreen);
 
+        final Animation translateLeft;
+        Animation translateRight;
+        container = findViewById(R.id.container);
         fragment1 = new Fragment1();
         fragment2 = new Fragment2();
         fragment3 = new Fragment3();
@@ -29,11 +39,21 @@ public class mainscreen extends AppCompatActivity {
         fragment5 = new Fragment5();
 
 
+        translateLeft = AnimationUtils.loadAnimation(this, R.anim.translate_left);
+        translateRight = AnimationUtils.loadAnimation(this, R.anim.translate_left);
+
         imgbtn_num1 = (ImageButton)findViewById(R.id.imgbtn_num1);
         imgbtn_num1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(isPageOpen){
+                    container.startAnimation(translateLeft);
+                }else{
+                    imgbtn_num1.setVisibility(View.VISIBLE);
+                    container.startAnimation(translateLeft);
+                }
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment1).commit();
+
             }
         });
 
