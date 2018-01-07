@@ -51,11 +51,14 @@ public class Fragment4 extends Fragment {
         mGroupList.add("받은쿠폰함");
         mGroupList.add("받을 수 있는 주변 쿠폰");
         mGroupList.add("쿠폰사용순위");
+        mGroupList.add("관심사가 같은 유저들이 선호하는 쿠폰");
 
         mChildListContent.add("1");
         mChildListContent.add("2");
         mChildListContent.add("3");
+        mChildListContent.add("4");
 
+        mChildList.add(mChildListContent);
         mChildList.add(mChildListContent);
         mChildList.add(mChildListContent);
         mChildList.add(mChildListContent);

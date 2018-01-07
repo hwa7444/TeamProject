@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     ImageButton imgbtn_back = null;
 
-    String[] items = {"도", "레", "미", "파", "솔", "라", "시", "도"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

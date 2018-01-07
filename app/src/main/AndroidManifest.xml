@@ -19,7 +19,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".mainscreen" />
         <activity android:name=".userinfo" />
-        <activity android:name=".chart"></activity>
+        <activity android:name=".chart" />
+        <activity android:name=".coupon"></activity>
     </application>
 
 </manifest>

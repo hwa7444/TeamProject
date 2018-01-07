@@ -1,6 +1,9 @@
 package codefactory.learfletproject;
 
+
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +12,7 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -20,19 +24,22 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
         private ArrayList<String> groupList = null;
         private ArrayList<ArrayList<String>> childList = null;
         private LayoutInflater inflater = null;
+        private Context c;
+
 
 
     public mExpandableAdapter(Context c, ArrayList<String> groupList,ArrayList<ArrayList<String>> childList){
         this.inflater = LayoutInflater.from(c);
         this.groupList = groupList;
         this.childList = childList;
-
+        this.c = c;
 
     }
 
 
     @Override
-    public int getGroupCount() { return groupList.size();
+    public int getGroupCount() {
+        return groupList.size();
     }
 
     @Override
@@ -92,7 +99,46 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
         tv3.setVisibility(View.VISIBLE);
         btn4.setVisibility(View.VISIBLE);
 
+        /*btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()){
+                    case R.id.btn_child4:
+                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(c);
+                        alertDialogBuilder.setTitle("쿠폰사용");
+
+                        alertDialogBuilder
+                                .setMessage("쿠폰을 사용하시겠습니까?")
+                                .setCancelable(false)
+                                .setPositiveButton("예",
+                                        new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int i) {
+                                                Intent it = new Intent(c, coupon.class);
+                                                c.startActivity(it);
+                                            }
+                                        })
+                                .setNegativeButton("아니오",
+                                        new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int i) {
+                                                dialog.cancel();
+                                            }
+                                        });
+                }
+            }
+        });*/
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(c, coupon.class);
+                c.startActivity(it);
+            }
+        });
+
         /*tv1.setText(childList.get(groupID).get(childID));*/
+
 
         if (groupID == 0){
             tv3.setVisibility(View.GONE);
