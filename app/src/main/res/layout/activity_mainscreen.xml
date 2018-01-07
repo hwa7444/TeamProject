@@ -93,7 +93,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@android:color/background_light"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/icon1" />
+                app:srcCompat="@drawable/exit" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,7 +125,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@android:color/background_light"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/icon3" />
+                app:srcCompat="@drawable/exit" />
         </LinearLayout>
 
         <LinearLayout
@@ -157,7 +157,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@android:color/background_light"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/icon5" />
+                app:srcCompat="@drawable/icon1" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
