@@ -2,6 +2,7 @@ package codefactory.learfletproject;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         btn_join = (Button) findViewById(R.id.btn_join);
         imgbtn_login = (ImageButton) findViewById(R.id.imgbtn_login);
 
-
+/**//**/
         btn_join.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
                 //id 확인 후 로그인
                 String userId = edt_id.getText().toString();
                 String userPw = edt_pw.getText().toString();
-                String fireBasePw = "1234"; // fir  eBase에서 비번 가져오기
+                String fireBasePw = "1234"; // fireBase에서 비번 가져오기
                 if (userPw.equals(fireBasePw)) {
                     spf = getSharedPreferences("id", MODE_PRIVATE);
                     spf.edit().putString("id", userId + "").commit();

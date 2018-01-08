@@ -1,5 +1,7 @@
 package codefactory.learfletproject;
 
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +26,8 @@ public class mainscreen extends AppCompatActivity {
     ImageButton imgbtn_num5 = null;
     boolean isPageOpen = false;
     FrameLayout container = null;
+
+    DrawerLayout drawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +42,7 @@ public class mainscreen extends AppCompatActivity {
         fragment4 = new Fragment4();
         fragment5 = new Fragment5();
 
+        drawerLayout = (DrawerLayout)findViewById(R.id.drawer);
 
         translateLeft = AnimationUtils.loadAnimation(this, R.anim.translate_left);
         translateRight = AnimationUtils.loadAnimation(this, R.anim.translate_left);
@@ -46,6 +51,9 @@ public class mainscreen extends AppCompatActivity {
         imgbtn_num1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+
                 if(isPageOpen){
                     container.startAnimation(translateLeft);
                 }else{
@@ -53,7 +61,7 @@ public class mainscreen extends AppCompatActivity {
                     container.startAnimation(translateLeft);
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment1).commit();
-
+                drawerLayout.closeDrawers();//버튼누르면 슬라이드메뉴창 닫기
             }
         });
 
@@ -62,6 +70,7 @@ public class mainscreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment2).commit();
+                drawerLayout.closeDrawers();
             }
         });
 
@@ -70,6 +79,7 @@ public class mainscreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment3).commit();
+                drawerLayout.closeDrawers();
             }
         });
 
@@ -78,6 +88,7 @@ public class mainscreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment4).commit();
+                drawerLayout.closeDrawers();
             }
         });
 
@@ -86,6 +97,7 @@ public class mainscreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment5).commit();
+                drawerLayout.closeDrawers();
             }
         });
     }
