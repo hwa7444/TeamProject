@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background3"
     android:orientation="vertical"
     tools:context="codefactory.learfletproject.LoginActivity">
 
@@ -21,13 +22,6 @@
             android:gravity="center_vertical|center_horizontal"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center_horizontal"
-                android:layout_weight="1"
-                android:background="@drawable/back" />
         </LinearLayout>
 
         <LinearLayout
@@ -47,7 +41,8 @@
                 android:paddingRight="50dp"
                 android:text="Sign In"
                 android:textAlignment="center"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
         </LinearLayout>
     </LinearLayout>
 
@@ -71,7 +66,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="0dp"
                 android:layout_marginTop="40dp"
-                android:background="@drawable/human2"
+                android:background="@drawable/group"
                 android:scaleType="fitXY" />
         </LinearLayout>
 
@@ -123,15 +118,16 @@
                 android:layout_weight="0.5"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/btn_join"
+
+                <TextView
+                    android:id="@+id/txt_join"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:backgroundTint="@android:color/background_light"
-                    android:text="회원이 아니신가요?" />
-
-
+                    android:text="아직 회원이 아니신가요?"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -147,7 +143,7 @@
                     android:layout_marginBottom="50dp"
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:background="@drawable/loginbutton"
+                    android:background="@drawable/loginbutton2"
                     android:scaleType="matrix" />
             </LinearLayout>
         </LinearLayout>
@@ -159,14 +155,13 @@
         android:layout_weight="1.4"
         android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/imageButton5"
+        <ImageView
+            android:id="@+id/imageView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:backgroundTint="@android:color/background_light"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/google" />
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/google2" />
     </LinearLayout>
 </LinearLayout>

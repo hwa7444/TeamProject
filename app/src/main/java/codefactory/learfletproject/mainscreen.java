@@ -7,8 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class mainscreen extends AppCompatActivity {
@@ -19,11 +20,11 @@ public class mainscreen extends AppCompatActivity {
     Fragment4 fragment4;
     Fragment5 fragment5;
 
-    ImageButton imgbtn_num1 = null;
-    ImageButton imgbtn_num2 = null;
-    ImageButton imgbtn_num3 = null;
-    ImageButton imgbtn_num4 = null;
-    ImageButton imgbtn_num5 = null;
+    Button imgbtn_num1 = null;
+    Button imgbtn_num2 = null;
+    Button imgbtn_num3 = null;
+    Button imgbtn_num4 = null;
+    Button imgbtn_num5 = null;
     boolean isPageOpen = false;
     FrameLayout container = null;
 
@@ -47,7 +48,7 @@ public class mainscreen extends AppCompatActivity {
         translateLeft = AnimationUtils.loadAnimation(this, R.anim.translate_left);
         translateRight = AnimationUtils.loadAnimation(this, R.anim.translate_left);
 
-        imgbtn_num1 = (ImageButton)findViewById(R.id.imgbtn_num1);
+        imgbtn_num1 = (Button)findViewById(R.id.imgbtn_num1);
         imgbtn_num1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +66,7 @@ public class mainscreen extends AppCompatActivity {
             }
         });
 
-        imgbtn_num2 = (ImageButton)findViewById(R.id.imgbtn_num2);
+        imgbtn_num2 = (Button) findViewById(R.id.imgbtn_num2);
         imgbtn_num2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,7 +75,7 @@ public class mainscreen extends AppCompatActivity {
             }
         });
 
-        imgbtn_num3 = (ImageButton)findViewById(R.id.imgbtn_num3);
+        imgbtn_num3 = (Button) findViewById(R.id.imgbtn_num3);
         imgbtn_num3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,7 +84,7 @@ public class mainscreen extends AppCompatActivity {
             }
         });
 
-        imgbtn_num4 = (ImageButton)findViewById(R.id.imgbtn_num4);
+        imgbtn_num4 = (Button) findViewById(R.id.imgbtn_num4);
         imgbtn_num4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,7 +93,7 @@ public class mainscreen extends AppCompatActivity {
             }
         });
 
-        imgbtn_num5 = (ImageButton)findViewById(R.id.imgbtn_num5);
+        imgbtn_num5 = (Button) findViewById(R.id.imgbtn_num5);
         imgbtn_num5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
