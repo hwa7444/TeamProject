@@ -10,26 +10,32 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
-        android:visibility="gone">
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/btn_star" />
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:ems="10"
-            android:hint="매장이름을 입력하세요"
             android:inputType="textPersonName"
+            android:text="매장이름"
             android:textAlignment="center" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
+        <TextView
+            android:id="@+id/iv_couponList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:backgroundTint="@android:color/background_light"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/icon2" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="쿠폰보기"
+            android:textAlignment="center"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -47,5 +53,17 @@
             android:scaleType="fitXY"
             app:srcCompat="@drawable/map" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgView_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="93dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/linear_top"
+        android:layout_toRightOf="@+id/linear_top"
+        app:srcCompat="@drawable/admin2" />
 
 </RelativeLayout>

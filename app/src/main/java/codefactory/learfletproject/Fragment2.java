@@ -37,6 +37,8 @@ public class Fragment2 extends Fragment {
     ImageView imageView_map = null;
     SharedPreferences spf = null;
     String id = "";
+    ImageView imgView_coupon = null;
+    ImageView iv_couponList = null;
 
     @Nullable
     @Override
@@ -44,8 +46,8 @@ public class Fragment2 extends Fragment {
         //ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment2, container, false);
         View v = inflater.inflate(R.layout.fragment2, container, false);
         imageView_map = v.findViewById(R.id.imgView_map);
-
-
+        imgView_coupon = v.findViewById(R.id.imgView_coupon);
+        //iv_couponList = v.findViewById(R.id.iv_couponList);
         linearTop = (LinearLayout)v.findViewById(R.id.linear_top);
         //linearTop = (LinearLayout)getView().findViewById(R.id.linear_top);
         linearTop.setVisibility(View.GONE);
@@ -55,12 +57,13 @@ public class Fragment2 extends Fragment {
         id = spf.getString("id","");
 
 
-        //지도 눌렀을때 상단 레이아웃 나오게 설정해 놓음.
-        //지도 상 표시 눌렀을 때 레이아웃 나오게 설정 바꿔야 함.
-        imageView_map.setOnClickListener(new View.OnClickListener() {
+
+
+        //지도상 쿠폰 눌렀을 때 상단 설명 바뀌는 클릭이벤트
+        //임시로 이미지뷰로 세팅해놓음
+        imgView_coupon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 //나타날 때 & 사라질 때 스르륵 애니메이션
                 Animation animation = new AlphaAnimation(0, 1);
                 animation.setDuration(1000);
@@ -69,9 +72,18 @@ public class Fragment2 extends Fragment {
                 linearTop.setAnimation(animation);
 
 
+
             }
         });
 
+
+        //쿠폰리스트 누르면 아래 쿠폰 나오는 버튼
+        iv_couponList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
         return v;
 
