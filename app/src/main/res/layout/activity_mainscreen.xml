@@ -99,13 +99,14 @@
             android:layout_weight="2"
             android:orientation="vertical">
 
-            <ImageButton
+            <Button
                 android:id="@+id/imgbtn_num1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.2"
                 android:backgroundTint="@android:color/background_light"
                 android:scaleType="fitXY"
+                android:text="홈"
                 app:srcCompat="@drawable/exit" />
 
             <ImageButton
