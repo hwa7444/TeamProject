@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -31,24 +32,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        final ArrayList<String> list1 = new ArrayList<>();
-        list1.add("1");
-        list1.add("1");
-        list1.add("1");
-        list1.add("1");
 
-
-
-        edt_id = (EditText)findViewById(R.id.edt_id);
-        edt_pw = (EditText)findViewById(R.id.edt_pw);
-        imgbtn_join = (ImageButton)findViewById(R.id.imgbtn_join);
-        imgbtn_login = (ImageButton)findViewById(R.id.imgbtn_login);
-
-
-
-
-
-
+        edt_id = (EditText) findViewById(R.id.edt_id);
+        edt_pw = (EditText) findViewById(R.id.edt_pw);
+        imgbtn_join = (ImageButton) findViewById(R.id.imgbtn_join);
+        imgbtn_login = (ImageButton) findViewById(R.id.imgbtn_login);
 
 
         imgbtn_join.setOnClickListener(new View.OnClickListener() {
@@ -63,21 +51,24 @@ public class LoginActivity extends AppCompatActivity {
         imgbtn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //id - firebase에서 받아와야 함.
-                String id = "beng";
-                spf = getSharedPreferences("id", MODE_PRIVATE);
-                spf.edit().putString("id", id + "").commit();
+                //id 확인 후 로그인
+                String userId = edt_id.getText().toString();
+                String userPw = edt_pw.getText().toString();
+                String fireBasePw = "1234"; // fireBase에서 비번 가져오기
+                if (userPw.equals(fireBasePw)) {
+                    spf = getSharedPreferences("id", MODE_PRIVATE);
+                    spf.edit().putString("id", userId + "").commit();
+                    Toast.makeText(getApplicationContext(), "로그인 성공. ", Toast.LENGTH_LONG).show();
+                    Intent it = new Intent(LoginActivity.this, mainscreen.class);
+                    startActivity(it);
+                    finish();
+
+                } else {
+                    Toast.makeText(getApplicationContext(), "아이디, 비밀번호가 일치하지 않습니다. ", Toast.LENGTH_LONG).show();
+
+                }
 
 
-                Intent it = new Intent(LoginActivity.this, mainscreen.class);
-
-
-                startActivity(it);
-
-
-
-
-                finish();
             }
         });
 
