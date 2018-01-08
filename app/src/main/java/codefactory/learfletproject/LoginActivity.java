@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ import java.util.ArrayList;
 public class LoginActivity extends AppCompatActivity {
     EditText edt_id = null;
     EditText edt_pw = null;
-    Button btn_join = null;
+    TextView txt_join = null;
     ImageButton imgbtn_login = null;
     SharedPreferences spf = null;
     private Spinner spinner1 = null;
@@ -37,11 +38,11 @@ public class LoginActivity extends AppCompatActivity {
 
         edt_id = (EditText) findViewById(R.id.edt_id);
         edt_pw = (EditText) findViewById(R.id.edt_pw);
-        btn_join = (Button) findViewById(R.id.btn_join);
+        txt_join = (TextView) findViewById(R.id.txt_join);
         imgbtn_login = (ImageButton) findViewById(R.id.imgbtn_login);
 
 /**//**/
-        btn_join.setOnClickListener(new View.OnClickListener() {
+        txt_join.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(LoginActivity.this, MainActivity.class);
