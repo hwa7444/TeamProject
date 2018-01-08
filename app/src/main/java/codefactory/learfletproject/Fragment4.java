@@ -73,7 +73,14 @@ public class Fragment4 extends Fragment {
 
 
         mExpandableAdapter eea = new mExpandableAdapter(getActivity(), mGroupList, mChildList);
+
+
+
+
+
         listView.setAdapter(eea);
+
+
 
         btn_list.setOnClickListener(new View.OnClickListener() {
             @Override
