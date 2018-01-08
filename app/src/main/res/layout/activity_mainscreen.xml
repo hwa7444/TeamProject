@@ -65,22 +65,52 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="120dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@drawable/side3"
+        android:background="@drawable/sidebar"
         android:gravity="top"
         android:orientation="vertical"
         android:weightSum="3">
 
         <TextView
+            android:id="@+id/txt_num6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txt_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txt_num8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
             android:id="@+id/txt_num2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.2"
             android:text="Find"
             android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColor="@android:color/black"
             android:textSize="24sp"
             android:textStyle="bold|italic" />
 
@@ -88,10 +118,10 @@
             android:id="@+id/txt_num3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.2"
             android:text="Famous restaurant"
             android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColor="@android:color/black"
             android:textSize="24sp"
             android:textStyle="bold|italic" />
 
@@ -99,10 +129,10 @@
             android:id="@+id/txt_num4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Couponstats"
+            android:layout_weight="0.2"
+            android:text="Coupon    list"
             android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColor="@android:color/black"
             android:textSize="24sp"
             android:textStyle="bold|italic" />
 
@@ -110,12 +140,13 @@
             android:id="@+id/txt_num5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.2"
             android:text="Settings"
             android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColor="@android:color/black"
             android:textSize="24sp"
             android:textStyle="bold|italic" />
+
     </LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>

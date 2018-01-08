@@ -51,6 +51,10 @@ public class mainscreen extends AppCompatActivity {
         translateLeft = AnimationUtils.loadAnimation(this, R.anim.translate_left);
         translateRight = AnimationUtils.loadAnimation(this, R.anim.translate_left);
 
+        //홈화면에서 지도 나오게
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment2).commit();
+        drawerLayout.closeDrawers();
+
         /*txt_num1 = (TextView)findViewById(R.id.txt_num1);
         txt_num1.setOnClickListener(new View.OnClickListener() {
             @Override
