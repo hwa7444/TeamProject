@@ -68,7 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@drawable/background3"
+        android:background="@drawable/side3"
         android:gravity="top"
         android:orientation="vertical"
         android:weightSum="3">
@@ -79,52 +79,40 @@
             android:layout_weight="2"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/imgbtn_num1"
+            <TextView
+                android:id="@+id/txt_num1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:backgroundTint="@android:color/background_light"
-                android:scaleType="fitXY"
-                android:text="홈"
-                app:srcCompat="@drawable/exit" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Home" />
 
-            <Button
-                android:id="@+id/imgbtn_num2"
+            <TextView
+                android:id="@+id/txt_num2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:backgroundTint="@android:color/background_light"
-                android:scaleType="fitXY"
-                android:text="찾기"
-                app:srcCompat="@drawable/icon2" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Find" />
 
-            <Button
-                android:id="@+id/imgbtn_num3"
+            <TextView
+                android:id="@+id/txt_num3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:backgroundTint="@android:color/background_light"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/exit" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
 
-            <Button
-                android:id="@+id/imgbtn_num4"
+            <TextView
+                android:id="@+id/txt_num4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:backgroundTint="@android:color/background_light"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/icon4" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
 
-            <Button
-                android:id="@+id/imgbtn_num5"
+            <TextView
+                android:id="@+id/txt_num5"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:backgroundTint="@android:color/background_light"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/icon5" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Settings" />
         </LinearLayout>
 
         <LinearLayout

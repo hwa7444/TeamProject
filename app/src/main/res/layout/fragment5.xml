@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background3"
     android:orientation="vertical"
     tools:context="codefactory.learfletproject.userinfo">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="1.05"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -38,17 +39,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="\n죠스타"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/txt_email"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -57,6 +48,16 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp" />
 
+                <TextView
+                    android:id="@+id/txt_email2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="나의관심사\n\n관심1 : 림송하\t\t관심2 : 박경도\n관심3 : 김병우"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -64,13 +65,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical"></LinearLayout>
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center">
+
+            <ExpandableListView
+                android:id="@+id/exlistView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center" />
+        </FrameLayout>
+
+        <ExpandableListView
+            android:id="@+id/exlistView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="1.4"
         android:orientation="horizontal">
 
         <TextView
@@ -78,9 +98,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="TextView"
+            android:background="@color/colorPrimaryDark"
+            android:text="Notice"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textSize="18sp"
             android:textStyle="italic" />
 
@@ -89,9 +110,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@color/colorAccent"
             android:text="Logout"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textSize="18sp"
             android:textStyle="italic" />
     </LinearLayout>
@@ -99,7 +121,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="1.1"
         android:orientation="vertical">
 
         <TextView

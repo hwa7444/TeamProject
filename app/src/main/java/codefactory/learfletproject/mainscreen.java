@@ -11,6 +11,9 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class mainscreen extends AppCompatActivity {
 
@@ -20,11 +23,11 @@ public class mainscreen extends AppCompatActivity {
     Fragment4 fragment4;
     Fragment5 fragment5;
 
-    Button imgbtn_num1 = null;
-    Button imgbtn_num2 = null;
-    Button imgbtn_num3 = null;
-    Button imgbtn_num4 = null;
-    Button imgbtn_num5 = null;
+    TextView txt_num1 = null;
+    TextView txt_num2 = null;
+    TextView txt_num3 = null;
+    TextView txt_num4 = null;
+    TextView txt_num5 = null;
     boolean isPageOpen = false;
     FrameLayout container = null;
 
@@ -48,15 +51,15 @@ public class mainscreen extends AppCompatActivity {
         translateLeft = AnimationUtils.loadAnimation(this, R.anim.translate_left);
         translateRight = AnimationUtils.loadAnimation(this, R.anim.translate_left);
 
-        imgbtn_num1 = (Button)findViewById(R.id.imgbtn_num1);
-        imgbtn_num1.setOnClickListener(new View.OnClickListener() {
+        txt_num1 = (TextView)findViewById(R.id.txt_num1);
+        txt_num1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 if(isPageOpen){
                     container.startAnimation(translateLeft);
                 }else{
-                    imgbtn_num1.setVisibility(View.VISIBLE);
+                    txt_num1.setVisibility(View.VISIBLE);
                     container.startAnimation(translateLeft);
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment1).commit();
@@ -64,8 +67,8 @@ public class mainscreen extends AppCompatActivity {
             }
         });
 
-        imgbtn_num2 = (Button) findViewById(R.id.imgbtn_num2);
-        imgbtn_num2.setOnClickListener(new View.OnClickListener() {
+        txt_num2 = (TextView) findViewById(R.id.txt_num2);
+        txt_num2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment2).commit();
@@ -73,8 +76,8 @@ public class mainscreen extends AppCompatActivity {
             }
         });
 
-        imgbtn_num3 = (Button) findViewById(R.id.imgbtn_num3);
-        imgbtn_num3.setOnClickListener(new View.OnClickListener() {
+        txt_num3 = (TextView) findViewById(R.id.txt_num3);
+        txt_num3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment3).commit();
@@ -82,8 +85,8 @@ public class mainscreen extends AppCompatActivity {
             }
         });
 
-        imgbtn_num4 = (Button) findViewById(R.id.imgbtn_num4);
-        imgbtn_num4.setOnClickListener(new View.OnClickListener() {
+        txt_num4 = (TextView) findViewById(R.id.txt_num4);
+        txt_num4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment4).commit();
@@ -91,8 +94,8 @@ public class mainscreen extends AppCompatActivity {
             }
         });
 
-        imgbtn_num5 = (Button) findViewById(R.id.imgbtn_num5);
-        imgbtn_num5.setOnClickListener(new View.OnClickListener() {
+        txt_num5 = (TextView) findViewById(R.id.txt_num5);
+        txt_num5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment5).commit();
