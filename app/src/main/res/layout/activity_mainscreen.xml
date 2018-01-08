@@ -68,71 +68,54 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@drawable/background3"
+        android:background="@drawable/side3"
         android:gravity="top"
         android:orientation="vertical"
         android:weightSum="3">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/txt_num2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/imgbtn_num1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:backgroundTint="@android:color/background_light"
-                android:scaleType="fitXY"
-                android:text="홈"
-                app:srcCompat="@drawable/exit" />
-
-            <Button
-                android:id="@+id/imgbtn_num2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:backgroundTint="@android:color/background_light"
-                android:scaleType="fitXY"
-                android:text="찾기"
-                app:srcCompat="@drawable/icon2" />
-
-            <Button
-                android:id="@+id/imgbtn_num3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:backgroundTint="@android:color/background_light"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/exit" />
-
-            <Button
-                android:id="@+id/imgbtn_num4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:backgroundTint="@android:color/background_light"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/icon4" />
-
-            <Button
-                android:id="@+id/imgbtn_num5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:backgroundTint="@android:color/background_light"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/icon5" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"></LinearLayout>
+            android:text="Find"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
 
+        <TextView
+            android:id="@+id/txt_num3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Famous restaurant"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txt_num4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Couponstats"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txt_num5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Settings"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
     </LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>

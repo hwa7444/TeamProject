@@ -23,7 +23,8 @@
         <activity android:name=".userinfo" />
         <activity android:name=".chart" />
         <activity android:name=".coupon" />
-        <activity android:name=".giftcouponActivity"></activity>
+        <activity android:name=".giftcouponActivity" />
+        <activity android:name=".firstActivity"></activity>
     </application>
 
 </manifest>
