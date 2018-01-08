@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         btn_join = (Button) findViewById(R.id.btn_join);
         imgbtn_login = (ImageButton) findViewById(R.id.imgbtn_login);
 
-/**/
+/**//**/
         btn_join.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
