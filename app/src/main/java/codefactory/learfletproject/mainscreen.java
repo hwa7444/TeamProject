@@ -53,8 +53,6 @@ public class mainscreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
-
                 if(isPageOpen){
                     container.startAnimation(translateLeft);
                 }else{
