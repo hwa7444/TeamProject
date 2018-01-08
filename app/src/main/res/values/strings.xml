@@ -59,4 +59,5 @@
         <item>차량</item>
         <item>전자제품</item>
     </string-array>
+    <string name="title_activity_coupon_list">CouponListActivity</string>
 </resources>

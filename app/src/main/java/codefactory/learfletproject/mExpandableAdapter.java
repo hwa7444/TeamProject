@@ -89,6 +89,11 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
         if(view == null){
             view = inflater.inflate(R.layout.sublistitem, viewGroup, false);
         }
+
+
+        //1. python 분석결과를 받아온다( 랭킹/쿠폰이름)
+        //2. 쿠폰 이름을 매개변수로 firebase의 data를 받아온다(업체 이미지, 쿠폰정보)
+        //3. 받아온 이미지, 텍스트를 아래 변수들에 넣는다.
         ImageView img1 = view.findViewById(R.id.img_child1);
         TextView tv2 = view.findViewById(R.id.tv_child2);
         TextView tv3 = view.findViewById(R.id.tv_child3);
