@@ -109,7 +109,7 @@
                 android:text="홈"
                 app:srcCompat="@drawable/exit" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/imgbtn_num2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -118,7 +118,7 @@
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/icon2" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/imgbtn_num3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -127,7 +127,7 @@
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/exit" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/imgbtn_num4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -136,7 +136,7 @@
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/icon4" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/imgbtn_num5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
