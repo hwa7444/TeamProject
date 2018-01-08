@@ -124,10 +124,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="아직 회원이 아니신가요?"
+                    android:text="Sign up for Couflet!"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="18sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout

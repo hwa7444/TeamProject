@@ -27,7 +27,7 @@ import java.util.ArrayList;
 
 public class Fragment1 extends Fragment {
 
-    private PieChart mPieChart; //piechart
+   /* private PieChart mPieChart; //piechart
     private Button btn_pie1, btn_bar1, btn_line1;
     SharedPreferences spf = null;
     String id = "";
@@ -109,8 +109,8 @@ public class Fragment1 extends Fragment {
         mPieChart.setData(pie_data);
 
 
-        return rootView;
+        return rootView;*/
 
     }
-}
+
 
