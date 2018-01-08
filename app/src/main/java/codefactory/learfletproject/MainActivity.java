@@ -74,6 +74,16 @@ public class MainActivity extends AppCompatActivity {
                 *
                 * */
 
+                //서버로 값 넘기기
+                String sendmsg = "vision_write";
+                try {
+
+
+                    Task task = new Task();
+                    task.execute("?id="+id+"&age="+age+"&gender="+gender+"&interest1="+interest1+"&interest2="+interest2+"&interest3="+interest3);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
                 Intent it = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(it);

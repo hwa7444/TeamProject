@@ -2,6 +2,7 @@ package codefactory.learfletproject;
 
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.EditText;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,20 +18,26 @@ import java.net.URL;
 
 public class Task extends AsyncTask<String, Void, String> {
     public static String ip = "knjas.or.kr"; //자신의 IP번호
-    public static String sendMsg, receiveMsg;
-    String serverip = "http://" + ip + ":8083/smart3/CouponCon"; // 연결할 jsp주소
+    public static String sendMsg="", receiveMsg;
+    String serverip = "http://192.168.0.6:8083/Learflet/CouponCon"; // 연결할 jsp주소
+    private EditText tx;
 
 
-    Task(String sendmsg) {
+    Task(String sendmsg, EditText edt_id) {
         this.sendMsg = sendmsg;
+        tx = edt_id;
     }
     Task(){};
+
+    public Task(EditText edt_id) {
+        tx = edt_id;
+    }
 
     @Override
     protected String doInBackground(String... strings) {
         try {
 
-
+            serverip+=strings[0];
             Log.v("hhd", "hello2");
             //String rst = new Task(sendmsg).execute(result,"vision_write").get();
             String str;
@@ -74,4 +81,8 @@ public class Task extends AsyncTask<String, Void, String> {
         return receiveMsg;
     }
 
+    @Override
+    protected void onPostExecute(String s) {
+        //tx.setText(s);//받아온 값 editText에 넣기
+    }
 }
