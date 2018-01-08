@@ -43,12 +43,12 @@ public class Fragment4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         spf = this.getActivity().getSharedPreferences("id", Context.MODE_PRIVATE);
-        id = spf.getString("id","");
+        id = spf.getString("id", "");
 
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment4, container, false);
 
-        btn_list = (Button)rootView.findViewById(R.id.btn_list);
+        btn_list = (Button) rootView.findViewById(R.id.btn_list);
 
         ExpandableListView listView = rootView.findViewById(R.id.exlistView);
         mGroupList = new ArrayList<String>();
@@ -57,7 +57,7 @@ public class Fragment4 extends Fragment {
 
         mGroupList.add("받은쿠폰함");
         mGroupList.add("받을 수 있는 주변 쿠폰");
-        mGroupList.add("쿠폰사용순위");
+        mGroupList.add("최근 유저들이 사용한 쿠폰");
         mGroupList.add("관심사가 같은 유저들이 선호하는 쿠폰");
 
         mChildListContent.add("1");

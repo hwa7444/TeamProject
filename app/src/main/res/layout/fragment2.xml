@@ -8,16 +8,9 @@
     <LinearLayout
         android:id="@+id/linear_top"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         android:visibility="visible">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:srcCompat="@android:drawable/btn_star" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -39,25 +32,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="쿠폰보기"
-            android:textSize="18sp" />
+            android:textAlignment="center"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imgView_coupon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="93dp"
-        android:layout_marginStart="93dp"
-        android:layout_marginTop="12dp"
-        android:layout_toEndOf="@+id/linear_top"
-        android:layout_toRightOf="@+id/linear_top"
-        app:srcCompat="@drawable/admin2" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/linear_top"
         android:orientation="horizontal">
 
@@ -71,26 +53,15 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imgView_map"
+        android:id="@+id/imgView_coupon"
         android:layout_width="wrap_content"
-        android:layout_height="576dp"
-        android:layout_weight="1"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/map" />
-
-    <TextView
-        android:id="@+id/tv_storeName"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.5"
-        android:text="매장이름"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/tv_couponList"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="쿠폰보기"
-        android:textSize="18sp" />
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="93dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/linear_top"
+        android:layout_toRightOf="@+id/linear_top"
+        app:srcCompat="@drawable/admin2" />
+
 </RelativeLayout>
