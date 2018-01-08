@@ -108,8 +108,8 @@ public class mainscreen extends AppCompatActivity {
             }
         });
 
-        imgButton_back = (ImageButton) findViewById(R.id.imgButton_back);
-        imgButton_back.setOnClickListener(new View.OnClickListener() {
+        //imgButton_back = (ImageButton) findViewById(R.id.imgButton_back);
+/*        imgButton_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(mainscreen.this, mainscreen.class);
@@ -117,7 +117,7 @@ public class mainscreen extends AppCompatActivity {
                 finish();
 
             }
-        });
+        });*/
     }
 }
 
