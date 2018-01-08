@@ -137,7 +137,7 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(c, coupon.class);
+                Intent it = new Intent(c, giftcouponActivity.class);
                 c.startActivity(it);
             }
         });

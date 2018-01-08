@@ -1,6 +1,7 @@
 package codefactory.learfletproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -22,6 +26,8 @@ public class Fragment5 extends Fragment {
     private ArrayList<ArrayList<String>> mChildList2 = null;
     private ArrayList<String> mChildListContent2 = null;
 
+    TextView txt_logout = null;
+
     SharedPreferences spf = null;
     String id = "";
 
@@ -29,12 +35,22 @@ public class Fragment5 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment5, container, false);
+
+        txt_logout = (TextView)rootView.findViewById(R.id.txt_logout);
+
         spf = this.getActivity().getSharedPreferences("id", Context.MODE_PRIVATE);
         id = spf.getString("id","");
         
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment5, container, false);
+       txt_logout.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent it = new Intent(getActivity(), LoginActivity.class);
+               startActivity(it);
+           }
+       });
 
-        ExpandableListView listView = rootView.findViewById(R.id.exlistview2);
+        /*ExpandableListView listView = rootView.findViewById(R.id.exlistview2);
         mGroupList2 = new ArrayList<String>();
         mChildList2 = new ArrayList<ArrayList<String>>();
         mChildListContent2 = new ArrayList<String>();
@@ -53,7 +69,7 @@ public class Fragment5 extends Fragment {
 
 
         mExpandableAdapter eea = new mExpandableAdapter(getActivity(), mGroupList2, mChildList2);
-        listView.setAdapter(eea);
+        listView.setAdapter(eea);*/
 
 
         return rootView;

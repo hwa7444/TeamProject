@@ -65,6 +65,7 @@ public class Fragment4 extends Fragment {
         mChildListContent.add("3");
         mChildListContent.add("4");
 
+
         mChildList.add(mChildListContent);
         mChildList.add(mChildListContent);
         mChildList.add(mChildListContent);
