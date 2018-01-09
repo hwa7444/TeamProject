@@ -82,7 +82,8 @@
             android:textAlignment="textStart"
             android:textColor="@color/colorAccent"
             android:textSize="24sp"
-            android:translationX="0dp" />
+            android:translationX="0dp"
+            tools:ignore="RtlCompat" />
 
         <TextView
             android:id="@+id/txt_num2"
@@ -108,7 +109,8 @@
             android:textAlignment="textStart"
             android:textColor="@color/colorAccent"
             android:textSize="18sp"
-            android:translationX="0dp" />
+            android:translationX="0dp"
+            tools:ignore="RtlCompat" />
 
         <TextView
             android:id="@+id/txt_num4"
@@ -121,7 +123,8 @@
             android:textAlignment="textStart"
             android:textColor="@color/colorAccent"
             android:textSize="18sp"
-            android:translationX="0dp" />
+            android:translationX="0dp"
+            tools:ignore="RtlCompat" />
 
         <TextView
             android:id="@+id/txt_num5"

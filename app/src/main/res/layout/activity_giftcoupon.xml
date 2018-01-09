@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background7"
     android:orientation="vertical"
     tools:context="codefactory.learfletproject.giftcouponActivity">
 
@@ -45,7 +44,7 @@
                 android:paddingLeft="60dp"
                 android:text="gift couflet"
                 android:textAlignment="textStart"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@android:color/holo_blue_light"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
         </LinearLayout>
@@ -74,7 +73,7 @@
                         android:layout_weight="5.8"
                         android:text="\n매장:"
                         android:textAlignment="textEnd"
-                        android:textColor="@color/colorPrimaryDark" />
+                        android:textColor="@color/colorAccent" />
 
                     <TextView
                         android:id="@+id/txt_store2"
@@ -83,7 +82,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="5dp"
                         android:text="\n도미노피자(충장점)"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/colorAccent"
                         android:textStyle="italic" />
                 </LinearLayout>
             </LinearLayout>
@@ -106,7 +105,7 @@
                         android:layout_weight="5.8"
                         android:text="\n쿠폰명:"
                         android:textAlignment="textEnd"
-                        android:textColor="@color/colorPrimaryDark" />
+                        android:textColor="@color/colorAccent" />
 
                     <TextView
                         android:id="@+id/txt_couponname2"
@@ -115,7 +114,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="5dp"
                         android:text="\n프리미엄피자30%할인쿠폰"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/colorAccent"
                         android:textStyle="italic" />
                 </LinearLayout>
             </LinearLayout>
@@ -138,7 +137,7 @@
                         android:layout_weight="5.8"
                         android:text="\n쿠폰기간:"
                         android:textAlignment="textEnd"
-                        android:textColor="@color/colorPrimaryDark" />
+                        android:textColor="@color/colorAccent" />
 
                     <TextView
                         android:id="@+id/txt_couponterm2"
@@ -148,7 +147,7 @@
                         android:paddingLeft="5dp"
                         android:text="\n2018년1월30일"
                         android:textAlignment="textStart"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/colorAccent"
                         android:textStyle="italic" />
                 </LinearLayout>
             </LinearLayout>
@@ -171,6 +170,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.8"
+        android:background="@drawable/giftcoupon2"
         android:orientation="horizontal">
 
         <TextView
@@ -178,21 +178,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@color/colorPrimary"
             android:text="발급받기"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="24sp"
-            android:textStyle="bold|italic" />
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txt_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="?attr/actionModeSplitBackground"
             android:text="취소"
             android:textAlignment="center"
-            android:textColor="@color/colorAccent"
-            android:textSize="24sp"
-            android:textStyle="bold|italic" />
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
     </LinearLayout>
 </LinearLayout>

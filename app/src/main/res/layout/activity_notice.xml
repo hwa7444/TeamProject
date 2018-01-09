@@ -6,29 +6,14 @@
     android:layout_height="match_parent"
     android:background="@drawable/background7"
     android:orientation="vertical"
-    tools:context="codefactory.learfletproject.Notice">
+    tools:context="codefactory.learfletproject.Notice"
+    android:paddingLeft="10dp"
+    >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.05"
-        android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/txt_back"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="9"
-            android:background="@drawable/back"
-            android:orientation="horizontal"></LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
 
-            <TextView
+    <TextView
                 android:id="@+id/txt_notice"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -40,127 +25,244 @@
                 android:textColor="@color/common_google_signin_btn_text_light_default"
                 android:textSize="16sp"
                 android:textStyle="italic" />
-        </LinearLayout>
 
-    </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_notice2"
+            android:layout_alignBottom="@+id/txt_notice2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="[Event]"
+            android:textColor="@android:color/holo_red_dark" />
 
         <TextView
             android:id="@+id/txt_notice2"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView7"
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="[이벤트]뉴욕브래드 뉴욕자이언트버거 대박할인 쿠폰 이벤트 안내"
-            android:textColor="@color/common_google_signin_btn_text_light_default" />
-    </LinearLayout>
+            android:text="뉴욕브래드 뉴욕자이언트버거 대박할인 쿠폰 이벤트 안내"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:textSize="13.5sp" />
 
-    <LinearLayout
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_notice3"
+            android:layout_alignBottom="@+id/txt_notice3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="[서비스점검]"
+            android:textColor="@android:color/holo_red_dark" />
 
         <TextView
             android:id="@+id/txt_notice3"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="[서비스점검]Couflet 앱 점검안내"
+            android:text="Couflet 앱 점검안내"
             android:textColor="@color/common_google_signin_btn_text_light_default" />
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_notice4"
+            android:layout_alignBottom="@+id/txt_notice4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="[안내]"
+            android:textColor="@android:color/holo_red_dark" />
 
         <TextView
             android:id="@+id/txt_notice4"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView33"
+            android:layout_toRightOf="@+id/textView33"
+            android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="[안내]Couflet 개인정보처리방침 안내"
+            android:text="Couflet 개인정보처리방침 안내"
             android:textColor="@color/common_google_signin_btn_text_light_default" />
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_notice5"
+            android:layout_alignBottom="@+id/txt_notice5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="[Event]"
+            android:textColor="@android:color/holo_red_dark" />
 
         <TextView
             android:id="@+id/txt_notice5"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView34"
+            android:layout_toRightOf="@+id/textView34"
+            android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="[이벤트]유가네가 쏜다! 기간한정 할인 쿠폰 이벤트 안내 "
+            android:text="유가네가 쏜다! 기간한정 할인 쿠폰 이벤트 안내 "
             android:textColor="@color/common_google_signin_btn_text_light_default" />
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_notice6"
+            android:layout_alignBottom="@+id/txt_notice6"
+            android:layout_toLeftOf="@+id/txt_notice6"
+            android:layout_toStartOf="@+id/txt_notice6"
+            android:text="[안내]"
+            android:textColor="@android:color/holo_red_dark" />
 
         <TextView
             android:id="@+id/txt_notice6"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="[안내]Couflet 쿠폰 발급 받기 순서 안내"
+            android:text="Couflet 쿠폰 발급 받기 순서 안내"
             android:textColor="@color/common_google_signin_btn_text_light_default" />
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_notice7"
+            android:layout_alignBottom="@+id/txt_notice7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="[서비스점검]"
+            android:textColor="@android:color/holo_red_dark" />
 
         <TextView
             android:id="@+id/txt_notice7"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="[서비스 점검]Couflet 고객센터 시스템 업그레이드 작업 안내"
+            android:text="Couflet 고객센터 시스템 업그레이드 작업 안내"
             android:textColor="@color/common_google_signin_btn_text_light_default" />
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_notice8"
+            android:layout_alignBottom="@+id/txt_notice8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="[Event]"
+            android:textColor="@android:color/holo_red_dark" />
 
         <TextView
             android:id="@+id/txt_notice8"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView37"
+            android:layout_toRightOf="@+id/textView37"
+            android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="[이벤트]Couflet 앱 오픈기념 대박 쿠폰 이벤트안내"
+            android:text="Couflet 앱 오픈기념 대박 쿠폰 이벤트안내"
             android:textColor="@color/common_google_signin_btn_text_light_default" />
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_notice9"
+            android:layout_alignBottom="@+id/txt_notice9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="[서비스오픈]"
+            android:textColor="@android:color/holo_red_dark" />
 
         <TextView
             android:id="@+id/txt_notice9"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="[서비스오픈]Coflet 배타 앱 오픈 안내"
+            android:text="Coflet 배타 앱 오픈 안내"
             android:textColor="@color/common_google_signin_btn_text_light_default" />
-    </LinearLayout>
+    </RelativeLayout>
+
 </LinearLayout>

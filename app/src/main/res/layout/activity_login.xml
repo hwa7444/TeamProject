@@ -116,6 +116,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:paddingTop="10dp"
                     android:text="Sign up for Couflet!"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
@@ -135,7 +136,7 @@
                     android:layout_marginBottom="50dp"
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:background="@drawable/loginbutton2"
+                    android:background="@drawable/login"
                     android:scaleType="matrix" />
             </LinearLayout>
         </LinearLayout>

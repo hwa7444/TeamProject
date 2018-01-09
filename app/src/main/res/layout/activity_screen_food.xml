@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background7"
+    android:background="@drawable/background12"
     android:orientation="vertical"
     tools:context="codefactory.learfletproject.screen_food">
 
@@ -25,6 +25,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
+            android:layout_marginTop="3dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -46,7 +48,8 @@
                     android:id="@+id/textView15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
+                    android:paddingLeft="10dp"
                     android:text="매장 : 하고스"
                     android:textColor="@color/colorAccent" />
 
@@ -54,7 +57,8 @@
                     android:id="@+id/textView12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
+                    android:paddingLeft="10dp"
                     android:text="음식 : 양식"
                     android:textColor="@color/colorAccent" />
 
@@ -62,7 +66,8 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="7"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
                     android:text="소개 : 분위기 좋은 인테리어와 맛있는 스테이크"
                     android:textColor="@color/colorAccent" />
             </LinearLayout>
@@ -71,6 +76,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -93,6 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="10dp"
                     android:text="매장 : 궁전제과"
                     android:textColor="@color/colorAccent" />
 
@@ -101,6 +108,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="10dp"
                     android:text="음식 : 베이커리"
                     android:textColor="@color/colorAccent" />
 
@@ -109,6 +117,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
+                    android:paddingLeft="10dp"
                     android:text="소개 : 공룡알빵 나비파이로 유명한 전국5대빵집"
                     android:textColor="@color/colorAccent" />
             </LinearLayout>
@@ -117,6 +126,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -139,6 +149,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="10dp"
                     android:text="매장 : 카페바리에"
                     android:textColor="@color/colorAccent" />
 
@@ -147,6 +158,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="10dp"
                     android:text="음식 : 까페"
                     android:textColor="@color/colorAccent" />
 
@@ -155,6 +167,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
+                    android:paddingLeft="10dp"
                     android:text="소개 : 충장로 파스타 피자 맛있는 카페"
                     android:textColor="@color/colorAccent" />
             </LinearLayout>
@@ -163,6 +176,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -185,6 +199,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="10dp"
                     android:text="매장 : 1st Recipe"
                     android:textColor="@color/colorAccent" />
 
@@ -193,6 +208,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="10dp"
                     android:text="음식 : 이탈리안음식"
                     android:textColor="@color/colorAccent" />
 
@@ -201,6 +217,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
+                    android:paddingLeft="10dp"
                     android:text="소개 : 크림파스타와 피자가 정말 맛있는 광주맛집 충장로맛집"
                     android:textColor="@color/colorAccent" />
             </LinearLayout>
@@ -209,6 +226,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -231,6 +249,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="10dp"
                     android:text="매장 : 엄마네돼지찌개"
                     android:textColor="@color/colorAccent" />
 
@@ -239,6 +258,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="10dp"
                     android:text="음식 : 한식"
                     android:textColor="@color/colorAccent" />
 
@@ -246,12 +266,14 @@
                     android:id="@+id/textView28"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="7"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
                     android:text="소개 : 백종원의 3대천왕 광주 매운 돼지찌개"
                     android:textColor="@color/colorAccent" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="215dp"
         android:layout_height="match_parent"
