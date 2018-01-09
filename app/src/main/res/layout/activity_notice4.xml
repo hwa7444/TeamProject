@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    android:orientation="vertical"
+    tools:context="codefactory.learfletproject.Notice4Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="codefactory.learfletproject.Notice2Activity">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        tools:context="codefactory.learfletproject.Notice2Activity">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="안녕하세요 Couflet입니다.\nCouflet서비스 개인정보처리방침이 아래와 같이 개정되어 안내드리니, 이용에 참고하여 주시기 바랍니다.\n\n\n1. 개정 주요 내용 :\n- 개인정보의 수집,이용 항목 수정\n- 개인정보 제3자 제공 내용 수정\n- 개인정보 수탁업체 정정 및 추가\n\n2. 개정 시행일자 : 2018년 1월 12일\n\n상세한 개정내용은 웹사이트 공지사항을 확인해주세요.\n\n\n변경된 개인정보처리방침 내용에 대한 문의사항이 있으신 경우, Couflet 고객지원센터 또는 jhyoon1128@gmail.com으로 문의 주시면 친절하게 안내해드리겠습니다.\n\n더욱 편리하고 안정적인 서비스로 회원님의 성원에 보답하겠습니다."
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="codefactory.learfletproject.Notice2Activity">
+
+    </LinearLayout>
+</LinearLayout>

@@ -35,9 +35,7 @@ public class chart extends AppCompatActivity {
         id = spf.getString("id","");
 
         mPieChart = (PieChart) findViewById(R.id.piechart);
-        btn_pie1 = (Button) findViewById(R.id.btn_pie1);
-        btn_bar1 = (Button) findViewById(R.id.btn_bar1);
-        btn_line1 = (Button) findViewById(R.id.btn_line1);
+
 //
 //            btn_bar1.setOnClickListener(new View.OnClickListener() {
 //                @Override

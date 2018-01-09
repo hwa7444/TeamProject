@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    android:orientation="vertical"
+    tools:context="codefactory.learfletproject.Notice5Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        tools:context="codefactory.learfletproject.Notice2Activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/event2"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="유가네가 쏜다 이벤트!\n안녕하세요 언제나 고객님들을 위해 열심히 달리는 Couflet입니다.\n\n 유가네 충장점에서 2시간동안 모든 메뉴 무료이벤트를 진행합니다.\n\n\n이벤트안내\n기간 : 2018년 1월 13일(13시부터) ~ 2018년 1월 13일(15시까지) 2시간동안 진행\n\n이벤트 참가조건 : 4명의 멤버가 구성이 이루어져야함, 메뉴주문시 1인당 1인분의 메뉴주문이상 불가(1인분만가능)\n\n감사합니다." />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

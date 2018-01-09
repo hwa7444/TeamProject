@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    android:orientation="vertical"
+    tools:context="codefactory.learfletproject.Notice6Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="안녕하세요 Couflet입니다.\n\n고객님들께 저희 어플에 이용함에 불편함과 이용방법을 잘 모르시는 분들께 사과의 말씀을 드립니다.\n\n저의 Couflet 이용 방법에 대해 다음과 같이 가이드를 진행하려고 합니다.\n\n이용방법\n\n- 회원가입또는 로그인후 메인메뉴 지도창에서 가고자하는 목적지를 터치를합니다.\n- 자신의 위치가 쿠폰에 해당 영역에 들어가 있으면 자동으로 쿠폰알림창이 뜹니다.\n- 쿠폰을 사용하려면 쿠폰을 발급을 받고 아니시면 취소를 눌러 빠져나옵니다. \n- 단 쿠폰을 취소하시게 되면 해당 쿠폰에 대해 다시 알림이 뜨지 않으시니 이 점 주의해 주시길 바라겠습니다. \n앞으로 고객님들을 위해 열심히 달리는 Couflet이 되겠습니다.\n\n감사합니다." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>

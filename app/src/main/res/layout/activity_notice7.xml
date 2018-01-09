@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    android:orientation="vertical"
+    tools:context="codefactory.learfletproject.Notice7Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="안녕하세요 Couflet에서 알려드립니다.\n\n더욱 안정된 서비스를 제공해 드리기 위해 멜론 고객센터 시스템 업그레이드 작업이 진행됩니다.\nCouflet 서비스 안정성 확보를 위한 작업이며, 작업시간 동안 멜론 및 멜론 아지톡의 1:1문의 이용이 불가능하오니 양해 부탁 드립니다.\n\n\n- 작업시간 : 1월 14일(목) 10:00 ~ 11:00(1시간)\n- 작업내용 : Couflet 고객센터 시스템 업그레이드\n- 작업영향 : 작업시간 동안 Couflet 1:1문의 접수 불가\n\n더욱 빠르고 안정적인 서비스로 보답해 드리겠습니다.\n\n감사합니다." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>
