@@ -16,7 +16,7 @@ public class screen_coupon extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_map);
+        setContentView(R.layout.activity_screen_coupon);
 
         txt_num2 = (TextView) findViewById(R.id.txt_num2);
         txt_num2.setOnClickListener(new View.OnClickListener() {

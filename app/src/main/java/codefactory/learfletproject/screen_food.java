@@ -1,60 +1,83 @@
 package codefactory.learfletproject;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class screen_food extends AppCompatActivity {
 
-    TextView txt_num2 = null;
-    TextView txt_num3 = null;
-    TextView txt_num4 = null;
-    TextView txt_num5 = null;
+
+    LinearLayout img1 = null;
+    LinearLayout img2 = null;
+    LinearLayout img3 = null;
+    LinearLayout img4 = null;
+    LinearLayout img5 = null;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_map);
+        setContentView(R.layout.activity_screen_food);
 
-        txt_num2 = (TextView) findViewById(R.id.txt_num2);
-        txt_num2.setOnClickListener(new View.OnClickListener() {
+
+
+       img1 = (LinearLayout)findViewById(R.id.img);
+        img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(screen_food.this, screen_map.class);
-                startActivity(it);
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mentalvehicle.co.kr/"));
+                startActivity(intent);
             }
         });
 
-        txt_num3 = (TextView) findViewById(R.id.txt_num3);
-        txt_num3.setOnClickListener(new View.OnClickListener() {
+        img2 = (LinearLayout)findViewById(R.id.img2);
+        img2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(screen_food.this, screen_food.class);
-                startActivity(it);
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kungjeun.co.kr/"));
+                startActivity(intent);
             }
         });
 
-        txt_num4 = (TextView) findViewById(R.id.txt_num4);
-        txt_num4.setOnClickListener(new View.OnClickListener() {
+        img3 = (LinearLayout)findViewById(R.id.img3);
+        img3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(screen_food.this, screen_coupon.class);
-                startActivity(it);
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://cafebarie.com/"));
+                startActivity(intent);
             }
         });
 
-        txt_num5 = (TextView) findViewById(R.id.txt_num5);
-        txt_num5.setOnClickListener(new View.OnClickListener() {
+        img4 = (LinearLayout)findViewById(R.id.img4);
+        img4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(screen_food.this, screen_info.class);
-                startActivity(it);
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://blog.naver.com/147048/221159547514"));
+                startActivity(intent);
             }
         });
 
-       /* imgbtn_back.setOnClickListener(new View.OnClickListener() {
+
+        img5 = (LinearLayout)findViewById(R.id.img5);
+        img5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://blog.naver.com/ynh1531/221166460890"));
+                startActivity(intent);
+            }
+        });
+
+
+
+
+       /*imgbtn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(mainscreen.this, mainscreen.class);
