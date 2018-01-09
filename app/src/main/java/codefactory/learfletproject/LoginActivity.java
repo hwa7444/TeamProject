@@ -47,8 +47,11 @@ public class LoginActivity extends AppCompatActivity {
         txt_join.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Task task = new Task();
-                task.execute("?log=join");//회원가입 서블릿으로 이동
+
+
+
+
+
 
                 Intent it = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(it);
@@ -70,8 +73,9 @@ public class LoginActivity extends AppCompatActivity {
                     Intent it = new Intent(LoginActivity.this, mainscreen.class);
                     startActivity(it);
                     finish();
-                    Task task = new Task();
+
                     try {
+                        Task task = new Task();
                         task.execute("?log=login&id="+ URLEncoder.encode(userId,"utf-8"));//인코딩후 서블릿으로 아이디값 전송.!
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();

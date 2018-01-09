@@ -19,7 +19,7 @@ import java.net.URL;
 public class Task extends AsyncTask<String, Void, String> {
     public static String ip = "knjas.or.kr"; //자신의 IP번호
     public static String sendMsg="", receiveMsg;
-    String serverip = "http://"+ip+":8083/Learflet/mainCon"; // 연결할 jsp주소
+    public static String serverip = "http://192.168.0.21:8083/Learflet/mainCon"; // 연결할 jsp주소
     private EditText tx;
 
 

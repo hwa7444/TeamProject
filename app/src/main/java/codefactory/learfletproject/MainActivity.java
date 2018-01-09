@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                         gender = URLEncoder.encode(gender,"utf-8");
 
                     Task task = new Task();
-                    task.execute("?id="+id+"&age="+age+"&gender="+gender+"&interest1="+interest1+"&interest2="+interest2+"&interest3="+interest3);
+                    task.execute("?log=join&id="+id+"&age="+age+"&gender="+gender+"&interest1="+interest1+"&interest2="+interest2+"&interest3="+interest3);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
