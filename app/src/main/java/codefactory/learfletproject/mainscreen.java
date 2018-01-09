@@ -50,6 +50,10 @@ public class mainscreen extends AppCompatActivity {
         fragment4 = new Fragment4();
         fragment5 = new Fragment5();
 
+        Intent intent = new Intent();
+        String analData = intent.getStringExtra("analData");
+
+
         imgbtn_back = (ImageView)findViewById(R.id.imgbtn_back);
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer);

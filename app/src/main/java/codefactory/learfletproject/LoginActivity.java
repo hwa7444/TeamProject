@@ -63,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
         imgbtn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 //id 확인 후 로그인
                 String userId = edt_id.getText().toString();
                 String userPw = edt_pw.getText().toString();
@@ -72,13 +73,18 @@ public class LoginActivity extends AppCompatActivity {
                     spf.edit().putString("id", userId + "").commit();
                     Toast.makeText(getApplicationContext(), "로그인 성공. ", Toast.LENGTH_LONG).show();
                     Intent it = new Intent(LoginActivity.this, mainscreen.class);
-                    startActivity(it);
-                    finish();
+
                     String sendmsg="login";
                     new Task(sendmsg).execute("sibal");
                     Task task = new Task();
                     String a = task.receiveMsg;
+
+
                     Log.v("값받아온것",task.receiveMsg+"");
+
+                    it.putExtra("analData",a+"");
+                    startActivity(it);
+                    finish();
                 } else {
                     Toast.makeText(getApplicationContext(), "아이디, 비밀번호가 일치하지 않습니다. ", Toast.LENGTH_LONG).show();
 
