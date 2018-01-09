@@ -26,6 +26,7 @@ public class Fragment5 extends Fragment {
     private ArrayList<ArrayList<String>> mChildList2 = null;
     private ArrayList<String> mChildListContent2 = null;
 
+    TextView txt_notice = null;
     TextView txt_logout = null;
 
     SharedPreferences spf = null;
@@ -37,6 +38,7 @@ public class Fragment5 extends Fragment {
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment5, container, false);
 
+        txt_notice = (TextView)rootView.findViewById(R.id.txt_notice);
         txt_logout = (TextView)rootView.findViewById(R.id.txt_logout);
 
         spf = this.getActivity().getSharedPreferences("id", Context.MODE_PRIVATE);
@@ -50,6 +52,13 @@ public class Fragment5 extends Fragment {
            }
        });
 
+       txt_notice.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent it = new Intent(getActivity(), Notice .class);
+               startActivity(it);
+           }
+       });
         /*ExpandableListView listView = rootView.findViewById(R.id.exlistview2);
         mGroupList2 = new ArrayList<String>();
         mChildList2 = new ArrayList<ArrayList<String>>();

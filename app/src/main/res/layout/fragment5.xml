@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:background="@drawable/picture" />
+                android:background="@drawable/picture3" />
         </LinearLayout>
 
         <LinearLayout
@@ -40,58 +40,49 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="아이디"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="24sp" />
+
+                <TextView
                     android:id="@+id/txt_email"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="\n\njhyoon1128@gmail.com"
+                    android:gravity="center"
+                    android:text="jhyoon1128@gmail.com"
                     android:textAlignment="center"
                     android:textColor="@color/common_google_signin_btn_text_dark_default"
-                    android:textSize="20sp" />
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="나의 관심사"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/txt_email2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="\t\t\t\t\t\t\t나의관심사\n\n관심1 : 림송하\n관심2 : 박경도\n관심3 : 김병우"
+                    android:gravity="center"
+                    android:text="관심1 : 림송하\n관심2 : 박경도\n관심3 : 김병우"
                     android:textAlignment="textStart"
                     android:textColor="@color/common_google_signin_btn_text_dark_default"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.7"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/colorPrimaryDark"
-            android:text="\nNotice"
-            android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
-            android:textSize="18sp"
-            android:textStyle="italic" />
-
-        <TextView
-            android:id="@+id/txt_logout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/colorAccent"
-            android:text="\nLogout"
-            android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
-            android:textSize="18sp"
-            android:textStyle="italic" />
     </LinearLayout>
 
     <LinearLayout
@@ -105,7 +96,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Couflet Project Member"
+            android:gravity="center_vertical"
+            android:text="약관 및 정책"
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp"
@@ -116,7 +108,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Production Director : Park Kyung Do"
+            android:gravity="center_vertical"
+            android:text="이용약관"
             android:textAlignment="viewStart"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp"
@@ -127,7 +120,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="App Development : Lim Song Ha"
+            android:gravity="center_vertical"
+            android:text="개인정보 취급 방침"
             android:textAlignment="viewStart"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp"
@@ -138,7 +132,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="App Development : Kim Byung Woo"
+            android:gravity="center_vertical"
+            android:text="위치기반 서비스 이용약관"
             android:textAlignment="viewStart"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp"
@@ -149,10 +144,44 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="App Design : Yoon Ji Ho"
+            android:gravity="center_vertical"
+            android:text="만든사람들"
             android:textAlignment="viewStart"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_vertical"
+            android:text="Notice"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:text="Logout"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="18sp"
             android:textStyle="italic" />
     </LinearLayout>
 </LinearLayout>

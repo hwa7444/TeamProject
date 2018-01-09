@@ -63,88 +63,83 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="120dp"
+        android:layout_width="215dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@drawable/sidebar"
+        android:background="@color/colorPrimary"
         android:gravity="top"
         android:orientation="vertical"
         android:weightSum="3">
 
         <TextView
-            android:id="@+id/txt_num6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
-            android:textSize="24sp"
-            android:textStyle="bold|italic" />
-
-        <TextView
             android:id="@+id/txt_num"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:textAlignment="center"
+            android:layout_weight="0.4"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="메뉴"
+            android:textAlignment="textStart"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textSize="24sp"
-            android:textStyle="bold|italic" />
-
-        <TextView
-            android:id="@+id/txt_num8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
-            android:textSize="24sp"
-            android:textStyle="bold|italic" />
+            android:translationX="0dp" />
 
         <TextView
             android:id="@+id/txt_num2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:text="Find"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            android:textStyle="bold|italic" />
+            android:layout_weight="0.4"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="매장찾기"
+            android:textAlignment="textStart"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="18sp"
+            android:translationX="0dp" />
 
         <TextView
             android:id="@+id/txt_num3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:text="Famous restaurant"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            android:textStyle="bold|italic" />
+            android:layout_weight="0.4"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="맛집추천"
+            android:textAlignment="textStart"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="18sp"
+            android:translationX="0dp" />
 
         <TextView
             android:id="@+id/txt_num4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:text="Coupon    list"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            android:textStyle="bold|italic" />
+            android:layout_weight="0.4"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="쿠폰리스트"
+            android:textAlignment="textStart"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="18sp"
+            android:translationX="0dp" />
 
         <TextView
             android:id="@+id/txt_num5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:text="Settings"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            android:textStyle="bold|italic" />
-
+            android:layout_weight="0.4"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="나의정보"
+            android:textAlignment="textStart"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="18sp"
+            android:translationX="0dp" />
     </LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>
