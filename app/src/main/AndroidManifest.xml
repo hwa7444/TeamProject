@@ -32,7 +32,11 @@
         <activity android:name=".Notice7Activity" />
         <activity android:name=".Notice8Activity" />
         <activity android:name=".Notice9Activity" />
-        <activity android:name=".Notice6Activity"></activity>
+        <activity android:name=".Notice6Activity" />
+        <activity android:name=".screen_map" />
+        <activity android:name=".screen_food" />
+        <activity android:name=".screen_coupon" />
+        <activity android:name=".screen_info"></activity>
     </application>
 
 </manifest>
