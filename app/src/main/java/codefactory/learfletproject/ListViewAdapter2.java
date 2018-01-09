@@ -2,23 +2,21 @@ package codefactory.learfletproject;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ListViewAdapter extends BaseAdapter {
+public class ListViewAdapter2 extends BaseAdapter {
     // Adapter에 추가된 데이터를 저장하기 위한 ArrayList
     private ArrayList<ListViewItem> listViewItemList = new ArrayList<ListViewItem>() ;
 
     // ListViewAdapter의 생성자
-    public ListViewAdapter() {
+    public ListViewAdapter2() {
 
     }
 
@@ -32,20 +30,12 @@ public class ListViewAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         final int pos = position;
-        if(position == 1){
-            //버튼 활성화
-        }else if(position == 2){
-            //버튼 비활성화
-        }
-        Log.v("값:",position+"");
-        Log.v("값2",convertView+"");
-        Log.v("값3",parent+"");
         final Context context = parent.getContext();
 
         // "listview_item" Layout을 inflate하여 convertView 참조 획득.
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.listview_item, parent, false);
+            convertView = inflater.inflate(R.layout.listview_item2, parent, false);
         }
 
         // 화면에 표시될 View(Layout이 inflate된)으로부터 위젯에 대한 참조 획득

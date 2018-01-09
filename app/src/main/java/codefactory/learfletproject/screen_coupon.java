@@ -57,10 +57,10 @@ public class screen_coupon extends AppCompatActivity {
 
         ///////////////////추천 쿠폰 리스트뷰 시작
         ListView listview2;
-        ListViewAdapter adapter2;
+        ListViewAdapter2 adapter2;
 
         // Adapter 생성
-        adapter2 = new ListViewAdapter();
+        adapter2 = new ListViewAdapter2();
 
         // 리스트뷰 참조 및 Adapter달기
         listview2 = (ListView) findViewById(R.id.listview2);
@@ -74,19 +74,31 @@ public class screen_coupon extends AppCompatActivity {
         //2. 분석결과에 해당하는 쿠폰정보 가져오기(FireBase)
 
         String a = "starbucks";
+        String b = "angelinus";
+        String c = "artbox";
+
+        int img1 = 0;
+        int img2 = 0;
+        int img3 = 0;
+
         int[] arr = {R.drawable.adidas,R.drawable.angelinus,R.drawable.apple,R.drawable.artbox,R.drawable.baskin,R.drawable.burgerking,R.drawable.china1,R.drawable.china2,R.drawable.dessert1,R.drawable.dior,R.drawable.domino,R.drawable.hair1,R.drawable.hair2,R.drawable.hyundai,R.drawable.innisfree,R.drawable.japan1,R.drawable.japan2,R.drawable.kia,R.drawable.korean1,R.drawable.korean2,R.drawable.korean3,R.drawable.kyobo,R.drawable.nail1,R.drawable.nail2,R.drawable.officedepot,R.drawable.pizzahut,R.drawable.chanel,R.drawable.sony,R.drawable.starbucks,R.drawable.sulbing,R.drawable.swarovski,R.drawable.thebodyshop,R.drawable.western1,R.drawable.western2,R.drawable.ypbook,R.drawable.yvessaintlaurent,};
         String[] arrString = {"adidas", "angelinus", "apple", "artbox", "baskin", "burgerking", "china1", "china2", "dessert1", "dior", "domino", "hair1", "hair2", "hyundai", "innisfree", "japan1", "japan2", "kfc", "kia", "korean1", "korean2", "korean3", "kyobo", "nail1", "nail2", "officedepot", "pizzahut", "chanel", "sony", "starbucks", "sulbing", "swarovski", "thebodyshop", "western1", "western2", "ypbook", "yvessaintlaurent"};
 
         for (int i = 0; i < arr.length; i++) {
             if (arrString[i].equals(a)) {
-                int img1 = arr[i];
+                img1 = arr[i];
             }
+            else if (arrString[i].equals(b)) {
+                img2 = arr[i];
+            }
+            else if (arrString[i].equals(c)) {
+                img3 = arr[i];
+            }
+
         }
 
 
-        int img1 = R.drawable.starbucks;
-        int img2 = R.drawable.angelinus;
-        int img3 = R.drawable.baskin;
+
         //3.가져온 쿠폰정보 listView2에 추가
         // 첫 번째 아이템 추가.
         adapter2.addItem(ContextCompat.getDrawable(this, img1),
