@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
                     spf = getSharedPreferences("id", MODE_PRIVATE);
                     spf.edit().putString("id", userId + "").commit();
                     Toast.makeText(getApplicationContext(), "로그인 성공. ", Toast.LENGTH_LONG).show();
-                    Intent it = new Intent(LoginActivity.this, mainscreen.class);
+                    Intent it = new Intent(LoginActivity.this, screen_map.class);
                     startActivity(it);
                     finish();
                     String sendmsg="login";
