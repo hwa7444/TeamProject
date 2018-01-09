@@ -14,12 +14,15 @@ import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 public class MainActivity extends AppCompatActivity {
-    ImageButton joinButton = null;
+    TextView joinButton = null;
     ImageButton imgbtn_back = null;
     EditText EtId = null;
     EditText EtPw = null;
@@ -37,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup1);
 
-        joinButton = (ImageButton) findViewById(R.id.btn_join);
+        joinButton = (TextView) findViewById(R.id.btn_join);
         imgbtn_back = (ImageButton) findViewById(R.id.imgbtn_back);
         Spinner spinner = (Spinner) findViewById(R.id.spn_interest1);
         Spinner spinner1 = (Spinner) findViewById(R.id.spn_interest2);

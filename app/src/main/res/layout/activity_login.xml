@@ -147,13 +147,5 @@
         android:layout_weight="1.4"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/google2" />
     </LinearLayout>
 </LinearLayout>
