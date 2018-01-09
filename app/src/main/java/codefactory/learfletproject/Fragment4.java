@@ -86,7 +86,7 @@ public class Fragment4 extends Fragment {
         mChildList.add(mChildListContent);
 
         mGroupList.add("보유중인 쿠폰");
-        mGroupList.add("추천 쿠폰 분석하기");
+        mGroupList.add("추천 쿠폰");
         //보유중인 쿠폰 리스트뷰 코드 끝
 
 
