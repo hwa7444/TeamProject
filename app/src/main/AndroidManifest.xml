@@ -25,6 +25,7 @@
         <activity android:name=".giftcouponActivity" />
         <activity android:name=".firstActivity" />
         <activity android:name=".Notice" />
+        <activity android:name=".screen_coupon"/>
         <activity android:name=".Notice2Activity" />
         <activity android:name=".Notice3Activity" />
         <activity android:name=".Notice4Activity" />
@@ -35,8 +36,7 @@
         <activity android:name=".Notice6Activity" />
         <activity android:name=".screen_map" />
         <activity android:name=".screen_food" />
-        <activity android:name=".screen_coupon" />
-        <activity android:name=".screen_info"></activity>
+        <activity android:name=".screen_info" />
     </application>
 
 </manifest>
