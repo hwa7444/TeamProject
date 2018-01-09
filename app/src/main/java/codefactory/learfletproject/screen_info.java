@@ -1,12 +1,16 @@
 package codefactory.learfletproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 public class screen_info extends AppCompatActivity {
+
+    TextView txt_notice = null;
+    TextView txt_logout = null;
 
     TextView txt_num2 = null;
     TextView txt_num3 = null;
@@ -17,6 +21,28 @@ public class screen_info extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_map);
+
+        txt_notice = (TextView)findViewById(R.id.txt_notice);
+
+        txt_notice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(screen_info.this, Notice.class);
+                startActivity(it);
+            }
+        });
+
+        txt_logout = (TextView)findViewById(R.id.txt_logout);
+
+        txt_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(screen_info.this, LoginActivity.class);
+                startActivity(it);
+            }
+        });
+
+
 
         txt_num2 = (TextView) findViewById(R.id.txt_num2);
         txt_num2.setOnClickListener(new View.OnClickListener() {
@@ -61,5 +87,7 @@ public class screen_info extends AppCompatActivity {
                 startActivity(it);
             }
         });*/
+
+
     }
 }
