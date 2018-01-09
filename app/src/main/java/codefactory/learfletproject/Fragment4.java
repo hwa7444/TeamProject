@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -98,6 +99,14 @@ public class Fragment4 extends Fragment {
         int recoImage = R.drawable.china2;
         String recoStoreName = "starbucks";
         String recoCouponInfo = "10% 할인";
+
+
+        String coupon1="";
+        Task task = new Task();
+
+        coupon1= task.receiveMsg; // 값을 받아옴
+        Log.v("값",coupon1+"");
+        Log.v("ㅅㅂ","메세지");
         int y = 3;
 
         for (int i = 0; i < y; i++) {
