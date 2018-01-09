@@ -1,21 +1,30 @@
 package codefactory.learfletproject;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-public class screen_coupon extends AppCompatActivity {
+import java.util.ArrayList;
 
+public class screen_coupon extends AppCompatActivity {
+    Intent intent = getIntent();
+    String[] dataArray = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_coupon);
-
+        String data = intent.getStringExtra("analData");
+        dataArray = data.split(",");
+        for (int i = 0; i<dataArray.length; i++){
+            Log.v("자른 데이터",dataArray[i]+"");
+        }
 
         ////////////////////보유중인 쿠폰 리스트 시작
         ListView listview;
@@ -81,22 +90,19 @@ public class screen_coupon extends AppCompatActivity {
         int img2 = 0;
         int img3 = 0;
 
-        int[] arr = {R.drawable.adidas,R.drawable.angelinus,R.drawable.apple,R.drawable.artbox,R.drawable.baskin,R.drawable.burgerking,R.drawable.china1,R.drawable.china2,R.drawable.dessert1,R.drawable.dior,R.drawable.domino,R.drawable.hair1,R.drawable.hair2,R.drawable.hyundai,R.drawable.innisfree,R.drawable.japan1,R.drawable.japan2,R.drawable.kia,R.drawable.korean1,R.drawable.korean2,R.drawable.korean3,R.drawable.kyobo,R.drawable.nail1,R.drawable.nail2,R.drawable.officedepot,R.drawable.pizzahut,R.drawable.chanel,R.drawable.sony,R.drawable.starbucks,R.drawable.sulbing,R.drawable.swarovski,R.drawable.thebodyshop,R.drawable.western1,R.drawable.western2,R.drawable.ypbook,R.drawable.yvessaintlaurent,};
+        int[] arr = {R.drawable.adidas, R.drawable.angelinus, R.drawable.apple, R.drawable.artbox, R.drawable.baskin, R.drawable.burgerking, R.drawable.china1, R.drawable.china2, R.drawable.dessert1, R.drawable.dior, R.drawable.domino, R.drawable.hair1, R.drawable.hair2, R.drawable.hyundai, R.drawable.innisfree, R.drawable.japan1, R.drawable.japan2, R.drawable.kia, R.drawable.korean1, R.drawable.korean2, R.drawable.korean3, R.drawable.kyobo, R.drawable.nail1, R.drawable.nail2, R.drawable.officedepot, R.drawable.pizzahut, R.drawable.chanel, R.drawable.sony, R.drawable.starbucks, R.drawable.sulbing, R.drawable.swarovski, R.drawable.thebodyshop, R.drawable.western1, R.drawable.western2, R.drawable.ypbook, R.drawable.yvessaintlaurent,};
         String[] arrString = {"adidas", "angelinus", "apple", "artbox", "baskin", "burgerking", "china1", "china2", "dessert1", "dior", "domino", "hair1", "hair2", "hyundai", "innisfree", "japan1", "japan2", "kfc", "kia", "korean1", "korean2", "korean3", "kyobo", "nail1", "nail2", "officedepot", "pizzahut", "chanel", "sony", "starbucks", "sulbing", "swarovski", "thebodyshop", "western1", "western2", "ypbook", "yvessaintlaurent"};
 
         for (int i = 0; i < arr.length; i++) {
             if (arrString[i].equals(a)) {
                 img1 = arr[i];
-            }
-            else if (arrString[i].equals(b)) {
+            } else if (arrString[i].equals(b)) {
                 img2 = arr[i];
-            }
-            else if (arrString[i].equals(c)) {
+            } else if (arrString[i].equals(c)) {
                 img3 = arr[i];
             }
 
         }
-
 
 
         //3.가져온 쿠폰정보 listView2에 추가

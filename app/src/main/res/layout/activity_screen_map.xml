@@ -58,7 +58,7 @@
         android:layout_width="215dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@drawable/sidemenu3"
+        android:background="@drawable/background11"
         android:gravity="top"
         android:orientation="vertical"
         android:weightSum="3">
@@ -132,6 +132,7 @@
             android:textSize="18sp"
             android:translationX="0dp"
             tools:ignore="RtlCompat" />
+
     </LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>

@@ -2,23 +2,17 @@ package codefactory.learfletproject;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity {
     EditText edt_id = null;
@@ -50,11 +44,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-
-
-
-
-                Intent it = new Intent(LoginActivity.this, MainActivity.class);
+                Intent it = new Intent(LoginActivity.this, memberjoinActivity.class);
                 startActivity(it);
                 finish();
             }
@@ -74,15 +64,23 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "로그인 성공. ", Toast.LENGTH_LONG).show();
                     Intent it = new Intent(LoginActivity.this, screen_map.class);
 
-                    String sendmsg="login";
+                    String a = "";
+                    //파이썬에서 값 받아오는 코드 / 다른페이지에도 넣겠음
+                    boolean isNull = true;
+                    String sendmsg = "login";
                     new Task(sendmsg).execute("sibal");
                     Task task = new Task();
-                    String a = task.receiveMsg;
+                    while (isNull) {
 
+                        a = task.receiveMsg;
+                        if(a!=null){
+                            isNull = false;
+                        }
+                    }
 
-                    Log.v("값받아온것",task.receiveMsg+"");
+                    Log.v("값받아온것", a + "");
 
-                    it.putExtra("analData",a+"");
+                    it.putExtra("analData", a + "");
                     startActivity(it);
                     finish();
                 } else {

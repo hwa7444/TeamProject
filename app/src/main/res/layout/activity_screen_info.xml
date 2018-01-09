@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background7"
+    android:background="@drawable/background13"
     android:orientation="vertical"
     tools:context="codefactory.learfletproject.screen_info">
 
@@ -24,9 +24,9 @@
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="30dp"
+                android:layout_margin="10dp"
                 android:layout_weight="2"
-                android:background="@drawable/picture4" />
+                android:background="@drawable/woman" />
         </LinearLayout>
 
         <LinearLayout

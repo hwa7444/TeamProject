@@ -3,6 +3,7 @@ package codefactory.learfletproject;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -12,11 +13,17 @@ public class screen_map extends AppCompatActivity {
     TextView txt_num3 = null;
     TextView txt_num4 = null;
     TextView txt_num5 = null;
+    String data = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_map);
+
+        Intent intent = getIntent();
+        data = intent.getStringExtra("analData");
+        Log.v("넘겨받은 데이터 : ",data+"");
 
         txt_num2 = (TextView) findViewById(R.id.txt_num2);
         txt_num2.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +47,9 @@ public class screen_map extends AppCompatActivity {
         txt_num4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent it = new Intent(screen_map.this, screen_coupon.class);
+                it.putExtra("analData",data+"");
                 startActivity(it);
             }
         });

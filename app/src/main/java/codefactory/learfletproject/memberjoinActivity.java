@@ -1,14 +1,11 @@
 package codefactory.learfletproject;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
@@ -16,12 +13,9 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-public class MainActivity extends AppCompatActivity {
+public class memberjoinActivity extends AppCompatActivity {
     TextView joinButton = null;
     ImageButton imgbtn_back = null;
     EditText EtId = null;
@@ -29,10 +23,11 @@ public class MainActivity extends AppCompatActivity {
     EditText EtAge = null;
     RadioGroup radioGroup = null;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_memberjoin);
 
         EtId = (EditText) findViewById(R.id.edt_id);
         EtPw = (EditText) findViewById(R.id.edt_pw);
@@ -96,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                Intent it = new Intent(MainActivity.this, LoginActivity.class);
+                Intent it = new Intent(memberjoinActivity.this, LoginActivity.class);
                 startActivity(it);
                 finish();
             }
@@ -106,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         imgbtn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this, LoginActivity.class);
+                Intent it = new Intent(memberjoinActivity.this, LoginActivity.class);
                 startActivity(it);
                 finish();
 
