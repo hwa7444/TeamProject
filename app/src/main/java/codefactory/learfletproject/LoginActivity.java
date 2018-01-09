@@ -15,6 +15,8 @@ import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity {
@@ -45,6 +47,9 @@ public class LoginActivity extends AppCompatActivity {
         txt_join.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Task task = new Task();
+                task.execute("log=join");//회원가입 서블릿으로 이동
+
                 Intent it = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(it);
                 finish();
@@ -65,7 +70,12 @@ public class LoginActivity extends AppCompatActivity {
                     Intent it = new Intent(LoginActivity.this, mainscreen.class);
                     startActivity(it);
                     finish();
-
+                    Task task = new Task();
+                    try {
+                        task.execute("log=login&id="+ URLEncoder.encode(userId,"utf-8"));//인코딩후 서블릿으로 아이디값 전송.!
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
                 } else {
                     Toast.makeText(getApplicationContext(), "아이디, 비밀번호가 일치하지 않습니다. ", Toast.LENGTH_LONG).show();
 
