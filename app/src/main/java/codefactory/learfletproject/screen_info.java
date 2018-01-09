@@ -12,19 +12,15 @@ public class screen_info extends AppCompatActivity {
     TextView txt_notice = null;
     TextView txt_logout = null;
 
-    TextView txt_num2 = null;
-    TextView txt_num3 = null;
-    TextView txt_num4 = null;
-    TextView txt_num5 = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_map);
+        setContentView(R.layout.activity_screen_info);
 
         txt_notice = (TextView)findViewById(R.id.txt_notice);
 
-        txt_notice.setOnClickListener(new View.OnClickListener() {
+       txt_notice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(screen_info.this, Notice.class);
@@ -44,41 +40,7 @@ public class screen_info extends AppCompatActivity {
 
 
 
-        txt_num2 = (TextView) findViewById(R.id.txt_num2);
-        txt_num2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(screen_info.this, screen_map.class);
-                startActivity(it);
-            }
-        });
 
-        txt_num3 = (TextView) findViewById(R.id.txt_num3);
-        txt_num3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(screen_info.this, screen_food.class);
-                startActivity(it);
-            }
-        });
-
-        txt_num4 = (TextView) findViewById(R.id.txt_num4);
-        txt_num4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(screen_info.this, screen_coupon.class);
-                startActivity(it);
-            }
-        });
-
-        txt_num5 = (TextView) findViewById(R.id.txt_num5);
-        txt_num5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(screen_info.this, screen_info.class);
-                startActivity(it);
-            }
-        });
 
        /* imgbtn_back.setOnClickListener(new View.OnClickListener() {
             @Override
