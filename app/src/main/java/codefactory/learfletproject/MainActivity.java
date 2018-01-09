@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 * */
 
                 //서버로 값 넘기기
-                String sendmsg = "vision_write";
+                String sendmsg = "join";
                 try {
                         id = URLEncoder.encode(id,"utf-8");
                         interest1 = URLEncoder.encode(interest1,"utf-8");
@@ -86,8 +86,9 @@ public class MainActivity extends AppCompatActivity {
                         interest3 = URLEncoder.encode(interest3,"utf-8");
                         gender = URLEncoder.encode(gender,"utf-8");
 
-                    Task task = new Task();
-                    task.execute("?log=join&id="+id+"&age="+age+"&gender="+gender+"&interest1="+interest1+"&interest2="+interest2+"&interest3="+interest3);
+                    //Task task = new Task();
+                    //task.execute("?log=join&id="+id+"&age="+age+"&gender="+gender+"&interest1="+interest1+"&interest2="+interest2+"&interest3="+interest3);
+                    new Task(sendmsg).execute("join",id,age,gender,interest1,interest2,interest3);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

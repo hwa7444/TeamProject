@@ -17,27 +17,22 @@ import java.net.URL;
  */
 
 public class Task extends AsyncTask<String, Void, String> {
-    public static String ip = "knjas.or.kr"; //자신의 IP번호
-    public static String sendMsg="", receiveMsg;
-    public static String serverip = "http://192.168.0.21:8083/Learflet/mainCon"; // 연결할 jsp주소
-    private EditText tx;
+    public static String ip = "192.168.0.21"; //자신의 IP번호
+    public static String sendMsg, receiveMsg;
+    String serverip = "http://knjas.or.kr:8083/Learflet/mainCon"; // 연결할 jsp주소
 
 
-    Task(String sendmsg, EditText edt_id) {
+
+    Task(String sendmsg) {
         this.sendMsg = sendmsg;
-        tx = edt_id;
     }
     Task(){};
-
-    public Task(EditText edt_id) {
-        tx = edt_id;
-    }
 
     @Override
     protected String doInBackground(String... strings) {
         try {
 
-            serverip+=strings[0];
+
             Log.v("hhd", "hello2");
             //String rst = new Task(sendmsg).execute(result,"vision_write").get();
             String str;
@@ -49,10 +44,10 @@ public class Task extends AsyncTask<String, Void, String> {
             OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream());
 
             Log.v("hhd", "hello3");
-            if (sendMsg.equals("vision_write")) {
-                sendMsg = "vision_write=" + strings[0] + "&type=" + strings[1];
-            } else if (sendMsg.equals("vision_list")) {
-                sendMsg = "&type=" + strings[0];
+            if (sendMsg.equals("join")) {
+                sendMsg = "join=" + strings[0]+"&joinid="+strings[1]+"&age="+strings[2]+"&gender="+strings[3]+"&interest1="+strings[4]+"&interest2="+strings[5]+"&interest3="+strings[6];
+            } else if (sendMsg.equals("login")) {
+                sendMsg = "login=" + strings[0];
             }
 
             osw.write(sendMsg);
@@ -81,8 +76,4 @@ public class Task extends AsyncTask<String, Void, String> {
         return receiveMsg;
     }
 
-    @Override
-    protected void onPostExecute(String s) {
-        //tx.setText(s);//받아온 값 editText에 넣기
-    }
 }

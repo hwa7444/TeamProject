@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Notice extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class Notice extends AppCompatActivity {
     TextView txt_notice7 = null;
     TextView txt_notice8 = null;
     TextView txt_notice9 = null;
+    LinearLayout txt_back = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,14 @@ public class Notice extends AppCompatActivity {
         setContentView(R.layout.activity_notice);
 
 
+        /*txt_back = (LinearLayout)findViewById(R.id.txt_back);
+        txt_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Notice.this, Fragment5.class);
+                startActivity(it);
+            }
+        });*/
 
         txt_notice2 = (TextView)findViewById(R.id.txt_notice2);
         txt_notice2.setOnClickListener(new View.OnClickListener() {

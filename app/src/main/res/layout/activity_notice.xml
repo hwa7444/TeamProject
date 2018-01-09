@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/picture2"
+    android:background="@drawable/background7"
     android:orientation="vertical"
     tools:context="codefactory.learfletproject.Notice">
 
@@ -15,6 +15,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/txt_back"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="9"
@@ -36,7 +37,7 @@
                 android:paddingRight="15dp"
                 android:text="Notice"
                 android:textAlignment="center"
-                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColor="@color/common_google_signin_btn_text_light_default"
                 android:textSize="16sp"
                 android:textStyle="italic" />
         </LinearLayout>
@@ -55,7 +56,7 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:text="[이벤트]뉴욕브래드 뉴욕자이언트버거 대박할인 쿠폰 이벤트 안내"
-            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+            android:textColor="@color/common_google_signin_btn_text_light_default" />
     </LinearLayout>
 
     <LinearLayout
@@ -70,7 +71,7 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:text="[서비스점검]Couflet 앱 점검안내"
-            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+            android:textColor="@color/common_google_signin_btn_text_light_default" />
     </LinearLayout>
 
     <LinearLayout
@@ -85,7 +86,7 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:text="[안내]Couflet 개인정보처리방침 안내"
-            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+            android:textColor="@color/common_google_signin_btn_text_light_default" />
     </LinearLayout>
 
     <LinearLayout
@@ -99,7 +100,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="[이벤트]유가네가 쏜다! 기간한정 할인 쿠폰 이벤트 안내 " />
+            android:text="[이벤트]유가네가 쏜다! 기간한정 할인 쿠폰 이벤트 안내 "
+            android:textColor="@color/common_google_signin_btn_text_light_default" />
     </LinearLayout>
 
     <LinearLayout
@@ -113,7 +115,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="[안내]Couflet 쿠폰 발급 받기 순서 안내" />
+            android:text="[안내]Couflet 쿠폰 발급 받기 순서 안내"
+            android:textColor="@color/common_google_signin_btn_text_light_default" />
     </LinearLayout>
 
     <LinearLayout
@@ -127,7 +130,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="[서비스 점검]Couflet 고객센터 시스템 업그레이드 작업 안내" />
+            android:text="[서비스 점검]Couflet 고객센터 시스템 업그레이드 작업 안내"
+            android:textColor="@color/common_google_signin_btn_text_light_default" />
     </LinearLayout>
 
     <LinearLayout
@@ -141,7 +145,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="[이벤트]Couflet 앱 오픈기념 대박 쿠폰 이벤트안내" />
+            android:text="[이벤트]Couflet 앱 오픈기념 대박 쿠폰 이벤트안내"
+            android:textColor="@color/common_google_signin_btn_text_light_default" />
     </LinearLayout>
 
     <LinearLayout
@@ -155,6 +160,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="[서비스오픈]Coflet 배타 앱 오픈 안내" />
+            android:text="[서비스오픈]Coflet 배타 앱 오픈 안내"
+            android:textColor="@color/common_google_signin_btn_text_light_default" />
     </LinearLayout>
 </LinearLayout>

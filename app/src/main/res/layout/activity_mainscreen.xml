@@ -66,7 +66,7 @@
         android:layout_width="215dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/sidemenu3"
         android:gravity="top"
         android:orientation="vertical"
         android:weightSum="3">
@@ -76,12 +76,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.4"
-            android:background="@color/colorPrimary"
             android:gravity="center_vertical"
             android:paddingLeft="30dp"
-            android:text="메뉴"
+            android:text="Menu"
             android:textAlignment="textStart"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
             android:textSize="24sp"
             android:translationX="0dp" />
 
@@ -90,12 +89,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.4"
-            android:background="@android:color/holo_blue_light"
             android:gravity="center_vertical"
             android:paddingLeft="30dp"
-            android:text="매장찾기"
+            android:text="Find"
             android:textAlignment="textStart"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
             android:textSize="18sp"
             android:translationX="0dp" />
 
@@ -104,12 +102,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.4"
-            android:background="@android:color/holo_blue_light"
             android:gravity="center_vertical"
             android:paddingLeft="30dp"
-            android:text="맛집추천"
+            android:text="Food"
             android:textAlignment="textStart"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
             android:textSize="18sp"
             android:translationX="0dp" />
 
@@ -118,12 +115,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.4"
-            android:background="@android:color/holo_blue_light"
             android:gravity="center_vertical"
             android:paddingLeft="30dp"
-            android:text="쿠폰리스트"
+            android:text="Coupon"
             android:textAlignment="textStart"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
             android:textSize="18sp"
             android:translationX="0dp" />
 
@@ -132,12 +128,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.4"
-            android:background="@android:color/holo_blue_light"
             android:gravity="center_vertical"
             android:paddingLeft="30dp"
-            android:text="나의정보"
+            android:text="Settings"
             android:textAlignment="textStart"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
             android:textSize="18sp"
             android:translationX="0dp" />
     </LinearLayout>
