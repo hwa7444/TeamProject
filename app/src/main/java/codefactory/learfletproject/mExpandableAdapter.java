@@ -22,16 +22,17 @@ import java.util.ArrayList;
 
 public class mExpandableAdapter extends BaseExpandableListAdapter {
         private ArrayList<String> groupList = null;
-        private ArrayList<ArrayList<String>> childList = null;
+        private ArrayList<ArrayList<MyCouponVO>> childList1 = null;
+        private ArrayList<ArrayList<MyCouponVO>> childList2 = null;
         private LayoutInflater inflater = null;
         private Context c;
 
 
 
-    public mExpandableAdapter(Context c, ArrayList<String> groupList,ArrayList<ArrayList<String>> childList){
+    public mExpandableAdapter(Context c, ArrayList<String> groupList, ArrayList<ArrayList<MyCouponVO>> childList1){
         this.inflater = LayoutInflater.from(c);
         this.groupList = groupList;
-        this.childList = childList;
+        this.childList1 = childList1;
         this.c = c;
 
     }
@@ -44,7 +45,7 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
 
     @Override
     public int getChildrenCount(int i) {
-        return childList.get(i).size();
+        return childList1.get(i).size();
     }
 
     @Override
@@ -54,7 +55,7 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
 
     @Override
     public Object getChild(int i, int i1) {
-        return childList.get(i).get(i1);
+        return childList1.get(i).get(i1);
     }
 
     @Override
@@ -90,11 +91,10 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
             view = inflater.inflate(R.layout.sublistitem, viewGroup, false);
         }
 
-
         //1. python 분석결과를 받아온다( 랭킹/쿠폰이름)
         //2. 쿠폰 이름을 매개변수로 firebase의 data를 받아온다(업체 이미지, 쿠폰정보)
         //3. 받아온 이미지, 텍스트를 아래 변수들에 넣는다.
-        ImageView img1 = view.findViewById(R.id.img_child1);
+        ImageView img1 = (ImageView)view.findViewById(R.id.img_child1);
         TextView tv2 = view.findViewById(R.id.tv_child2);
         TextView tv3 = view.findViewById(R.id.tv_child3);
         Button btn4 = view.findViewById(R.id.btn_child4);
@@ -103,6 +103,11 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
         tv2.setVisibility(View.VISIBLE);
         tv3.setVisibility(View.VISIBLE);
         btn4.setVisibility(View.VISIBLE);
+
+        img1.setImageResource(childList1.get(groupID).get(childID).getImage());
+        tv2.setText(childList1.get(groupID).get(childID).getCouponContents()+"");
+        tv3.setText(childList1.get(groupID).get(childID).getCouponValidity()+"");
+
 
         /*btn4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -145,13 +150,12 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
         /*tv1.setText(childList.get(groupID).get(childID));*/
 
 
-        if (groupID == 0){
+       if (groupID == 1){
+            btn4.setVisibility(View.GONE);
+        }/*else if(groupID == 1){
             tv3.setVisibility(View.GONE);
             btn4.setVisibility(View.GONE);
-        }else if(groupID == 1){
-            tv3.setVisibility(View.GONE);
-            btn4.setVisibility(View.GONE);
-        }/*else{
+        }*//*else{
             view = inflater.inflate(R.layout.fragment1, viewGroup, false);
         }*/
 
@@ -163,4 +167,5 @@ public class mExpandableAdapter extends BaseExpandableListAdapter {
     public boolean isChildSelectable(int i, int i1) {
         return true;
     }
+
 }
