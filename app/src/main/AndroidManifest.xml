@@ -24,7 +24,16 @@
         <activity android:name=".chart" />
         <activity android:name=".coupon" />
         <activity android:name=".giftcouponActivity" />
-        <activity android:name=".firstActivity"></activity>
+        <activity android:name=".firstActivity" />
+        <activity android:name=".Notice" />
+        <activity android:name=".Notice2Activity" />
+        <activity android:name=".Notice3Activity" />
+        <activity android:name=".Notice4Activity" />
+        <activity android:name=".Notice5Activity" />
+        <activity android:name=".Notice7Activity" />
+        <activity android:name=".Notice8Activity" />
+        <activity android:name=".Notice9Activity" />
+        <activity android:name=".Notice6Activity"></activity>
     </application>
 
 </manifest>
