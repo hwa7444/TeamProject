@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    android:orientation="vertical"
+    tools:context="codefactory.learfletproject.Notice8Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="codefactory.learfletproject.Notice2Activity">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        tools:context="codefactory.learfletproject.Notice2Activity">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="안녕하세요 Couflet입니다.\n\n 배타 앱 오픈기념 Couflet에서 깜짝 대박 쿠폰 이벤트를 진행합니다.\n\n\- 진행일 : 2018년 1월 10일(17시) ~ 1월 10일(19시)\n이벤트내용 : 충장로구역 모든 쿠폰 최대 70% 할인쿠폰 지급이벤트\n- 이벤트 진행방법 : 충장로에 떠다니는 쿠폰을 발급받으신 후., 해당 매장에서 사용하시면 되겠습니다.\n\n 단 이벤트 진행시 한사람당 한개의 쿠폰만 사용가능하오니 이 점 유의하시길 바랍니다.\n\n\n 감사합니다."
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="codefactory.learfletproject.Notice2Activity">
+
+    </LinearLayout>
+</LinearLayout>

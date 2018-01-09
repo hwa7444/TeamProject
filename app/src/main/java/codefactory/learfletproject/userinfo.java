@@ -15,6 +15,5 @@ public class userinfo extends AppCompatActivity {
 
         spf = getSharedPreferences("id", MODE_PRIVATE);
         id = spf.getString("id","");
-
     }
 }

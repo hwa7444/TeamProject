@@ -1,5 +1,6 @@
 package codefactory.learfletproject;
 
+import android.content.Intent;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -31,6 +33,8 @@ public class mainscreen extends AppCompatActivity {
     boolean isPageOpen = false;
     FrameLayout container = null;
 
+    ImageView imgbtn_back = null;
+
     DrawerLayout drawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +49,8 @@ public class mainscreen extends AppCompatActivity {
         fragment3 = new Fragment3();
         fragment4 = new Fragment4();
         fragment5 = new Fragment5();
+
+        imgbtn_back = (ImageView)findViewById(R.id.imgbtn_back);
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer);
 
@@ -104,6 +110,14 @@ public class mainscreen extends AppCompatActivity {
             public void onClick(View view) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment5).commit();
                 drawerLayout.closeDrawers();
+            }
+        });
+
+        imgbtn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(mainscreen.this, mainscreen.class);
+                startActivity(it);
             }
         });
     }

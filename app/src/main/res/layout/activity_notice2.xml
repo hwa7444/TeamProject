@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    android:orientation="vertical"
+    tools:context="codefactory.learfletproject.Notice2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="codefactory.learfletproject.Notice2Activity">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        tools:context="codefactory.learfletproject.Notice2Activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/event"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="뉴욕브래드 버거 최대40% 할인 쿠폰이벤트 안내\n\n 안녕하세요 Couflet입니다. 뉴욕브래드 충장점에서 프리미엄 햄버거 구매시 20~40%할인 쿠폰을 지급해드립니다.\n\n- 쿠폰이벤트 기간 : 2018년 1월 11일 ~ 2018년 1월 13일 마감시까지 (2일간 진행)\n\n감사합니다." />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="codefactory.learfletproject.Notice2Activity">
+
+    </LinearLayout>
+</LinearLayout>
