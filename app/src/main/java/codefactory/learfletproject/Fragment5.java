@@ -55,7 +55,7 @@ public class Fragment5 extends Fragment {
        txt_notice.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Intent it = new Intent(getActivity(), Notice .class);
+               Intent it = new Intent(getActivity(), Notice.class);
                startActivity(it);
            }
        });
